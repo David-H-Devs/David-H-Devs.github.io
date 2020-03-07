@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-07T14:43:18.372Z</updated>
+    <updated>2020-03-07T14:46:49.798Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -10,4 +10,16 @@
     <logo>https://david-h-devs.github.io/images/avatar.png</logo>
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[新建博客撒花]]></title>
+        <id>https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/</id>
+        <link href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/">
+        </link>
+        <updated>2020-03-07T14:43:47.000Z</updated>
+        <content type="html"><![CDATA[<p>在3月7日（确切的来说几天前就建好了，但这次是正式版），我的博客建成了！</p>
+<p>这要感谢搭建Gridea的工程师们与我的朋友<a href = "https://lewis-li-lyf.github.io/">LewisLi</a>（这是他的博客）。</p>
+<p>总而言之，我的小博客总算建好了！以后还会陆续加一些东西，比如2D小人这类的qwq。</p>
+<p>都要加油啊！</p>
+]]></content>
+    </entry>
 </feed>
