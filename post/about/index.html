@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>关于 | Gridea</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1583589663224">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1583590660752">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="关于 | Gridea - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
@@ -28,7 +28,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1583589663224" alt="">
+  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1583590660752" alt="">
   </a>
   <h1 class="site-title">
     Gridea
@@ -129,6 +129,32 @@
 
         
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '38f0918369a7b346ea5a',
+    clientSecret: '68aa96c34b479c82a5ac132c4bf3b1fe123afdd3',
+    repo: 'David-H-Devs.github.io',
+    owner: 'David-H-Devs',
+    admin: ['David-H-Devs'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
 
         <div class="site-footer">
