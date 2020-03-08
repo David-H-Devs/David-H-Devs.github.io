@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T10:26:19.299Z</updated>
+    <updated>2020-03-08T10:34:00.769Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -255,7 +255,66 @@ while(r &gt; qr) now -= !--cnt[aa[r--]];
 而且这个优化看上去满满的不好搞，但实际上很有用。不过用它来优化千万要建立在熟练的基础上，不然会大大增强调试难度，不如不用。<br>
 4.手写快读、快输<br>
 （还是来自原博客）<br>
-大多数莫队题的输入输出量还是很大的……I/O优化与否，运行时间差异也很大。而且值得注意的是莫队经典题中基本没有输入输出负数的情况，不考虑负数又能优化一点小小的常数。</p>
+大多数莫队题的输入输出量还是很大的……I/O优化与否，运行时间差异也很大。而且值得注意的是莫队经典题中基本没有输入输出负数的情况，不考虑负数又能优化一点小小的常数。<br>
+我们来写（抄）一下代码吧！（依然是来自原博客）</p>
+<pre><code class="language-cpp">#include &lt;cstdio&gt;
+#include &lt;cstring&gt;
+#include &lt;cmath&gt;
+#include &lt;algorithm&gt;
+using namespace std;
+
+#define maxn 1010000
+#define maxb 1010
+int aa[maxn], cnt[maxn], belong[maxn];
+int n, m, size, bnum, now, ans[maxn];
+struct query {
+    int l, r, id;
+} q[maxn];
+
+int cmp(query a, query b) {
+    return (belong[a.l] ^ belong[b.l]) ? belong[a.l] &lt; belong[b.l] : ((belong[a.l] &amp; 1) ? a.r &lt; b.r : a.r &gt; b.r);
+}
+#define isdigit(x) ((x) &gt;= '0' &amp;&amp; (x) &lt;= '9')
+int read() {
+    int res = 0;
+    char c = getchar();
+    while(!isdigit(c)) c = getchar();
+    while(isdigit(c)) res = (res &lt;&lt; 1) + (res &lt;&lt; 3) + c - 48, c = getchar();
+    return res;
+}
+void printi(int x) {
+    if(x / 10) printi(x / 10);
+    putchar(x % 10 + '0');
+}
+
+int main() {
+    scanf(&quot;%d&quot;, &amp;n);
+    size = sqrt(n);
+    bnum = ceil((double)n / size);
+    for(int i = 1; i &lt;= bnum; ++i) 
+        for(int j = (i - 1) * size + 1; j &lt;= i * size; ++j) {
+            belong[j] = i;
+        }
+    for(int i = 1; i &lt;= n; ++i) aa[i] = read(); 
+    m = read();
+    for(int i = 1; i &lt;= m; ++i) {
+        q[i].l = read(), q[i].r = read();
+        q[i].id = i;
+    }
+    sort(q + 1, q + m + 1, cmp);
+    int l = 1, r = 0;
+    for(int i = 1; i &lt;= m; ++i) {
+        int ql = q[i].l, qr = q[i].r;
+        while(l &lt; ql) now -= !--cnt[aa[l++]];
+        while(l &gt; ql) now += !cnt[aa[--l]]++;
+        while(r &lt; qr) now += !cnt[aa[++r]]++;
+        while(r &gt; qr) now -= !--cnt[aa[r--]];
+        ans[q[i].id] = now;
+    }
+    for(int i = 1; i &lt;= m; ++i) printi(ans[i]), putchar('\n');
+    return 0;
+}
+</code></pre>
 ]]></content>
     </entry>
     <entry>
