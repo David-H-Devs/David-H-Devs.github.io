@@ -2,26 +2,13 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T15:16:40.742Z</updated>
+    <updated>2020-03-08T15:17:06.302Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
     <logo>https://david-h-devs.github.io/images/avatar.png</logo>
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
-    <entry>
-        <title type="html"><![CDATA[月赛讲评 #1]]></title>
-        <id>https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/</id>
-        <link href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/">
-        </link>
-        <updated>2020-03-16T01:40:00.000Z</updated>
-        <content type="html"><![CDATA[<p>从这个月开始，每个月都会有1-2次月赛（在蒟蒻欢乐小窝里面的团队赛）</p>
-<p>我们来讲一下<a href="https://www.luogu.com.cn/contest/27538">【JR-002】2020 蒟蒻 3 月月赛 II</a>吧！<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>KaTeX</mtext></mrow><annotation encoding="application/x-tex">\KaTeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.89883em;vertical-align:-0.2155em;"></span><span class="mord text"><span class="mord textrm">K</span><span class="mspace" style="margin-right:-0.17em;"></span><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.904999em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord text"><span class="mord textrm sizing reset-size6 size3">A</span></span></span></span></span></span><span class="mspace" style="margin-right:-0.15em;"></span><span class="mord text"><span class="mord textrm">T</span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.46782999999999997em;"><span style="top:-2.7845em;"><span class="pstrut" style="height:3em;"></span><span class="mord text"><span class="mord textrm">E</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2155em;"><span></span></span></span></span><span class="mspace" style="margin-right:-0.125em;"></span><span class="mord textrm">X</span></span></span></span></span></span></p>
-<h1 id="题目a">题目A</h1>
-<h2 id="题目描述">题目描述</h2>
-]]></content>
-    </entry>
     <entry>
         <title type="html"><![CDATA[各种模板]]></title>
         <id>https://david-h-devs.github.io/post/ge-chong-mo-ban/</id>
