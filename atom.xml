@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T08:58:35.610Z</updated>
+    <updated>2020-03-08T09:06:11.510Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -15,15 +15,29 @@
         <link href="https://david-h-devs.github.io/post/mo-dui/">
         </link>
         <updated>2020-03-08T08:47:00.000Z</updated>
-        <content type="html"><![CDATA[<p>我们今天来讲一个<s>所有人都知道的</s>算法。</p>
-<p><s>众所周知</s>，莫队算法是由莫涛大神提出的，一种<s>玄学骗分</s>的区间操作算法。以简短的框架、简单的板子（大雾）和优秀的复杂度闻名于世。然而，莫队算法的题目都是较高的难度评级 <s>（指NOI/NOI+/CTSC或暂未评级）</s>。</p>
+        <content type="html"><![CDATA[<p>我们今天来讲一个<s>所有人都知道的</s>算法。<br>
+<s>众所周知</s>，莫队算法是由莫涛大神提出的，一种<s>玄学骗分</s>的区间操作算法。以简短的框架、简单的板子（大雾）和优秀的复杂度闻名于世。然而，莫队算法的题目都是较高的难度评级 <s>（指NOI/NOI+/CTSC或暂未评级）</s>。</p>
 <h1 id="前置知识们">前置知识们</h1>
 <ol>
 <li>分块</li>
 <li>STL的<code>sort</code>的用法（包括但不限于手写cmp函数）</li>
 <li>基础的卡常技巧（包括但不限于<code>#pragma GCC optimize</code>）</li>
-<li></li>
+<li>*倍增/树剖 求LCA（树上莫队所需）</li>
+<li>∗数值离散化（用于应付很多题目）</li>
 </ol>
+<h1 id="莫队算法是什么">莫队算法是什么</h1>
+<p>莫队算法（mo's algorithm）一般分为两类，一是莫队维护区间答案，二是维护区间内的数据结构。当然也有树上莫队，带修改莫队、二维莫队等等。<br>
+然而这个算法到底是干嘛的呢？我们先来瞎看一道题：<a href="https://www.luogu.com.cn/problem/P1972">P1972</a>（是道蓝题，没想到吧），你可以点进链接查看题目，也可以留下，在这里看题。</p>
+<h3 id="题目描述">题目描述</h3>
+<p>HH 有一串由各种漂亮的贝壳组成的项链。HH 相信不同的贝壳会带来好运，所以每次散步完后，他都会随意取出一段贝壳，思考它们所表达的含义。HH 不断地收集新的贝壳，因此，他的项链变得越来越长。<br>
+有一天，他突然提出了一个问题：某一段贝壳中，包含了多少种不同的贝壳？这个问题很难回答…… 因为项链实在是太长了。于是，他只好求助睿智的你，来解决这个问题。</p>
+<h3 id="输入格式">输入格式</h3>
+<p>一行一个正整数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>，表示项链长度。<br>
+第二行<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>个正整数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">a_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ，表示项链中第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>个贝壳的种类。<br>
+第三行一个整数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>，表示 HH 询问的个数。<br>
+接下来 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 行，每行两个整数 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mo separator="true">,</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">l,r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>，表示询问的区间。</p>
+<h3 id="输出格式">输出格式</h3>
+<p>输出<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span>行，每行一个整数，依次表示询问对应的答案。</p>
 ]]></content>
     </entry>
     <entry>
