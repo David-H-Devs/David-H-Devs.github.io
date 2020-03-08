@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T14:18:07.040Z</updated>
+    <updated>2020-03-08T14:38:08.738Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -448,6 +448,9 @@ int main()
 <p>这要感谢搭建Gridea的工程师们与我的朋友<a href = "https://lewis-li-lyf.github.io/">LewisLi</a>（这是他的博客）。</p>
 <p>总而言之，我的小博客总算建好了！以后还会陆续加一些东西，比如2D小人这类的qwq。</p>
 <p>都要加油啊！</p>
+<blockquote>
+<p>中国总是被他们最勇敢的人保护得很好。</p>
+</blockquote>
 ]]></content>
     </entry>
 </feed>
