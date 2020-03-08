@@ -81,7 +81,7 @@
                         <input id="switch_default" type="checkbox" class="switch_default">
                         <label for="switch_default" class="toggleBtn"></label>
             </div>
-            <form id="gridea-search-form" data-update="1583659232230" action="/search/index.html">
+            <form id="gridea-search-form" data-update="1583659680049" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
             </form>
         </div>
@@ -100,7 +100,7 @@
                         <!--zh-->
                         <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
                     </div>
-                    <form id="gridea-search-form" data-update="1583659232230" action="/search/index.html">
+                    <form id="gridea-search-form" data-update="1583659680049" action="/search/index.html">
                         <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
                     </form>
                     <!--en-->
@@ -175,9 +175,9 @@
                                 Date: <a href="#">2020-03-08</a>
                             </span>
                                     <span class="post-readtime">Reading Time:<a
-                                    href="#">3.3
+                                    href="#">3.7
                                     mins</a></span>
-                                    <span class="post-words">words:<a href="#">863</a></span>
+                                    <span class="post-words">words:<a href="#">961</a></span>
                                     
                                         <span class="post-category">
                                 Category:
@@ -241,7 +241,12 @@
 本题可能需要较快的读入方式，最大数据点读入数据约 <code>20MB</code>。</p>
 <p>だが，这道题卡了莫队，所以我们要看一道数据弱化版<a href="https://www.luogu.com.cn/problem/SP3267">SP3267 dquery - d-QUERY</a>（数据弱化版居然是道紫题，没想到吧）<br>
 <img src="https://i.loli.net/2020/03/08/zo5T4FSgZWXck9K.png" alt="" loading="lazy"></p>
-<p>题目到手，我们开始分析本题的算法。这题最简单做法无非暴力——用一个<code>cnt</code>数组记录每个数值出现的次数，再暴力枚举<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span>到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>统计次数，最后再扫一遍<code>cnt</code>数组，统计<code>cnt</code>不为零的数值个数，输出答案即可。设最大数值为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>，那么这样做的复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>s</mi><mo>)</mo><mo>)</mo><mo>∼</mo><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m(n+s))\sim O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，对于本题实在跑不起。</p>
+<p>题目到手，我们开始分析本题的算法。这题最简单做法无非暴力——用一个<code>cnt</code>数组记录每个数值出现的次数，再暴力枚举<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span>到<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span>统计次数，最后再扫一遍<code>cnt</code>数组，统计<code>cnt</code>不为零的数值个数，输出答案即可。设最大数值为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>，那么这样做的复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>s</mi><mo>)</mo><mo>)</mo><mo>∼</mo><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m(n+s))\sim O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mclose">)</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，对于本题实在跑不起。<br>
+我们就在想，可不可以来那么亿点点优化。于是，两个优化如下：</p>
+<ol>
+<li>每一次枚举到的数值<code>num</code>，增加出现次数的时候判断<code>cnt[num]</code>是否等于0，若是，则加一，反之，则为-1。这样，我们就优化掉了一个<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mi>s</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(ms)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mord mathdefault">s</span><span class="mclose">)</span></span></span></span>，但是，还是跑不起啊！</li>
+<li>我们在搞2个指针，<code>l</code>和<code>r</code></li>
+</ol>
 
                         </div>
                         
@@ -294,8 +299,8 @@
                                                     <i class="post-share"></i>
                                                     <span>Share:</span>
                                                         <a title="QR Code" target="_blank" href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://david-h-devs.github.io/post/mo-dui/"><i class="fa fa-qrcode"></i></a>
-                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://david-h-devs.github.io/post/mo-dui/&sharesource=qzone&title=莫队&pics=https://david-h-devs.github.io//images/avatar.png?v=1583659232230&summary="><i class="fa fa-qq"></i></a>
-                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://david-h-devs.github.io/post/mo-dui/&sharesource=weibo&title=莫队 + " - " + &pic="https://david-h-devs.github.io//images/avatar.png?v=1583659232230 "><i class="fa fa-weibo "></i></a>
+                                                        <a title="QQ" target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://david-h-devs.github.io/post/mo-dui/&sharesource=qzone&title=莫队&pics=https://david-h-devs.github.io//images/avatar.png?v=1583659680049&summary="><i class="fa fa-qq"></i></a>
+                                                        <a title="Weibo" target="_blank" href="https://service.weibo.com/share/share.php?url=https://david-h-devs.github.io/post/mo-dui/&sharesource=weibo&title=莫队 + " - " + &pic="https://david-h-devs.github.io//images/avatar.png?v=1583659680049 "><i class="fa fa-weibo "></i></a>
                                                         
                                                                 </span>
                                                                 <!--en-->
@@ -435,7 +440,7 @@ setInterval("createtime()",250);
                     CheckVersion();
                     
                     var newDate = new Date();
-                    newDate.setTime(1583659232230);
+                    newDate.setTime(1583659680049);
                     console.log(" Blog Update Time: " + newDate.toLocaleDateString());
                     console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
                 </script>
