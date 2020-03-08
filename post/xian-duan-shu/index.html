@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1583633167836">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1583633569848">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
 
 
@@ -29,7 +29,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://david-h-devs.github.io/">
-        <img src="https://david-h-devs.github.io//images/avatar.png?v=1583633167836" class="site-logo">
+        <img src="https://david-h-devs.github.io//images/avatar.png?v=1583633569848" class="site-logo">
         <h1 class="site-title">谷俊的小屋</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -132,7 +132,73 @@ setInterval("createtime()",250);
 <li>只有右子树；</li>
 <li>完全二叉树。</li>
 </ol>
-<p>我</p>
+<p>注意：二叉树不是树</p>
+<p>我们来简要的写写二叉树的代码（例如去重搜索）：</p>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;cstdio&gt;
+
+using namespace std;
+
+const int N = 1e5 + 10;
+
+struct Node
+{
+    int val, lc, rc, w;
+} T[N];
+
+int n, cnt = 1, a[N];
+
+void ins(int o, int v)
+{
+    if (!(T[o].val))
+    {
+        T[o].val = v;
+        T[o].w++;
+        return;
+    }
+    if (T[o].val == v)
+    {
+        T[o].w++;
+        return;
+    }
+    if (v &lt; T[o].val)
+    {
+        if (!(T[o].lc))
+            T[o].lc = ++cnt;
+        ins(T[o].lc, v);
+    }
+    if (v &gt; T[o].val)
+    {
+        if (!T[o].rc)
+            T[o].rc = ++cnt;
+        ins(T[o].rc, v);
+    }
+}
+
+void dfs(int o)
+{
+    if (!T[o].val)
+        return;
+    if (T[o].lc)
+        dfs(T[o].lc);
+    printf(&quot;%d &quot;, T[o].val);
+    if (T[o].rc)
+        dfs(T[o].rc);
+}
+
+int main()
+{
+    scanf(&quot;%d&quot;, &amp;n);
+    for (int i = 1; i &lt;= n; i++)
+        scanf(&quot;%d&quot;, a + i);
+    for (int i = 1; i &lt;= n; i++)
+    {
+        ins(1, a[i]);
+    }
+    dfs(1);
+    return 0;
+}
+</code></pre>
 
             </div>
             
