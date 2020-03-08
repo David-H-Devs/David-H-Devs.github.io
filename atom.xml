@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T10:23:00.009Z</updated>
+    <updated>2020-03-08T10:26:19.299Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -225,8 +225,37 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
 </code></pre>
 <blockquote>
 <p>也就是说，对于左端点在同一奇数块的区间，右端点按升序排列，反之降序。这个东西也是看着没用，但实际效果显著。<br>
-它的主要原理便是右指针跳完奇数块往回跳时在同一个方向能顺路把偶数块跳完，然后跳完这个偶数块又能顺带把下一个奇数块跳完。理论上主算法运行时间减半，实际情况有所偏差。（不过能优化得很爽就对了）</p>
+它的主要原理便是右指针跳完奇数块往回跳时在同一个方向能顺路把偶数块跳完，然后跳完这个偶数块又能顺带把下一个奇数块跳完。理论上主算法运行时间减半，实际情况有所偏差。（不过能优化得很爽就对了）<br>
+3、移动指针的常数压缩<br>
+（仍然是来自原博客）<br>
+我们可以根据运算优先级的知识，把这个：</p>
 </blockquote>
+<pre><code class="language-cpp">void add(int pos) {
+    if(!cnt[aa[pos]]) ++now;
+    ++cnt[aa[pos]];
+}
+void del(int pos) {
+    --cnt[aa[pos]];
+    if(!cnt[aa[pos]]) --now;
+}
+</code></pre>
+<p>和这个：</p>
+<pre><code class="language-cpp">while(l &lt; ql) del(l++);
+while(l &gt; ql) add(--l);
+while(r &lt; qr) add(++r);
+while(r &gt; qr) del(r--);
+</code></pre>
+<p>硬生生压缩成这个：</p>
+<pre><code class="language-cpp">while(l &lt; ql) now -= !--cnt[aa[l++]];
+while(l &gt; ql) now += !cnt[aa[--l]]++;
+while(r &lt; qr) now += !cnt[aa[++r]]++;
+while(r &gt; qr) now -= !--cnt[aa[r--]];
+</code></pre>
+<p>能优化将近200ms（怎么又是这个数字）<br>
+而且这个优化看上去满满的不好搞，但实际上很有用。不过用它来优化千万要建立在熟练的基础上，不然会大大增强调试难度，不如不用。<br>
+4.手写快读、快输<br>
+（还是来自原博客）<br>
+大多数莫队题的输入输出量还是很大的……I/O优化与否，运行时间差异也很大。而且值得注意的是莫队经典题中基本没有输入输出负数的情况，不考虑负数又能优化一点小小的常数。</p>
 ]]></content>
     </entry>
     <entry>
