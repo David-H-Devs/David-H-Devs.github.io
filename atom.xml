@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T15:32:33.113Z</updated>
+    <updated>2020-03-08T15:33:41.222Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -10,7 +10,7 @@
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
     <entry>
-        <title type="html"><![CDATA[P2482 [SDOI2010]猪国杀（试着看看题）]]></title>
+        <title type="html"><![CDATA[P2482 [SDOI2010]猪国杀（试着做做）]]></title>
         <id>https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/</id>
         <link href="https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/">
         </link>
@@ -22,7 +22,7 @@
 <h3 id="游戏目的">游戏目的</h3>
 <p>主猪 / <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext mathvariant="monospace">MP</mtext></mrow><annotation encoding="application/x-tex">\texttt{MP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61111em;vertical-align:0em;"></span><span class="mord text"><span class="mord texttt">MP</span></span></span></span></span>：自己存活的情况下消灭所有的反猪。<br>
 忠猪 / <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext mathvariant="monospace">ZP</mtext></mrow><annotation encoding="application/x-tex">\texttt{ZP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61111em;vertical-align:0em;"></span><span class="mord text"><span class="mord texttt">ZP</span></span></span></span></span>：不惜一切保护主猪，胜利条件与主猪相同。<br>
-反猪 / \texttt{AP}：杀死主猪。</p>
+反猪 / <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext mathvariant="monospace">AP</mtext></mrow><annotation encoding="application/x-tex">\texttt{AP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61111em;vertical-align:0em;"></span><span class="mord text"><span class="mord texttt">AP</span></span></span></span></span>：杀死主猪。</p>
 <h3 id="游戏过程">游戏过程</h3>
 <p>游戏开始时，每个玩家手里都会有 4 张牌，且体力上限和初始体力都是 4 。<br>
 开始游戏时，从主猪开始，按照逆时针方向（数据中就是按照编号从 <span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \ldot at position 23: …3 \ldots n , 1 \̲l̲d̲o̲t̲'>1 , 2, 3 \ldots n , 1 \ldot</span>的顺序）依次行动。<br>
@@ -58,7 +58,7 @@
 <li>跳忠：即通过行动表示自己是忠猪。跳忠行动就是对主猪或对某只已经跳忠的猪献殷勤，或者对某只已经跳反的猪表敌意；</li>
 <li>跳反：即通过行动表示自己是反猪。跳反行动就是对主猪或对某只已经跳忠的猪表敌意，或者对某只已经跳反的猪献殷勤。</li>
 </ol>
-<p>**注意：**忠猪不会跳反，反猪也不会跳忠；不管是忠猪还是反猪，能够跳必然跳。</p>
+<p><strong>注意：</strong> 忠猪不会跳反，反猪也不会跳忠；不管是忠猪还是反猪，能够跳必然跳。</p>
 <h3 id="行动准则">行动准则</h3>
 <h4 id="共性">共性</h4>
 <p>每个角色如果手里有桃且生命值未满，那么必然吃掉；<br>
