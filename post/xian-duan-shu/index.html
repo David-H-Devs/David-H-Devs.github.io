@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>二叉树 | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1583646566056">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1583646888188">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="二叉树 | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
@@ -22,7 +22,7 @@
       <div class="main-content">
         <div class="site-header">
   <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1583646566056" alt="">
+  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1583646888188" alt="">
   </a>
   <h1 class="site-title">
     谷俊的小屋
@@ -204,7 +204,7 @@ int main()
         
 
         <div class="site-footer">
-  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+  <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
     function createtime() { 
@@ -216,8 +216,7 @@ int main()
         mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
         seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
         snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "我的小博客博客已安全运行 "+dnum+" 天 "; 
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+        document.getElementById("timeDate").innerHTML = "我的小博客已安全运行 "+dnum+" 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒";  
     } 
 setInterval("createtime()",250);
 </script>
