@@ -2,13 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-08T08:26:43.272Z</updated>
+    <updated>2020-03-08T08:53:07.997Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
     <logo>https://david-h-devs.github.io/images/avatar.png</logo>
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[莫队]]></title>
+        <id>https://david-h-devs.github.io/post/mo-dui/</id>
+        <link href="https://david-h-devs.github.io/post/mo-dui/">
+        </link>
+        <updated>2020-03-08T08:47:00.000Z</updated>
+        <content type="html"><![CDATA[<p>我们今天来讲一个<s>所有人都知道的</s>算法。</p>
+<p><s>众所周知</s>，莫队算法是由莫涛大神提出的，一种<s>玄学骗分</s>的区间操作算法。以简短的框架、简单的板子（大雾）和优秀的复杂度闻名于世。然而，莫队算法的题目都是较高的难度评级 <s>（指NOI/NOI+/CTSC或暂未评级）</s>。</p>
+<h1 id="前置知识们">前置知识们</h1>
+<ol>
+<li>分块</li>
+<li>STL的<code>sort</code>的用法（包括但不限于手写cmp函数）</li>
+<li>基础的卡常技巧（包括但不限于<code>#pragma GCC optimize</code>）</li>
+<li></li>
+</ol>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[二叉树]]></title>
         <id>https://david-h-devs.github.io/post/xian-duan-shu/</id>
