@@ -2,13 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-09T01:32:12.972Z</updated>
+    <updated>2020-03-09T04:40:40.551Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
     <logo>https://david-h-devs.github.io/images/avatar.png</logo>
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[MC跑酷术语]]></title>
+        <id>https://david-h-devs.github.io/post/mc-pao-ku-zhu-yu/</id>
+        <link href="https://david-h-devs.github.io/post/mc-pao-ku-zhu-yu/">
+        </link>
+        <updated>2020-03-09T02:39:21.000Z</updated>
+        <content type="html"><![CDATA[<p>最近好像入MC跑酷，但没有时间，所以就只能整理出一份术语表来看看了qwq</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">释义</th>
+<th style="text-align:center">特殊用途（具体解释）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">neo</td>
+<td style="text-align:center">旋转跳</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">bc</td>
+<td style="text-align:center">脚到头顶方块的距离</td>
+<td style="text-align:center">常用于顶头跳</td>
+</tr>
+<tr>
+<td style="text-align:center">bm</td>
+<td style="text-align:center">助跑距离</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">b</td>
+<td style="text-align:center">远，需要跳跃的距离</td>
+<td style="text-align:center">一般远的单位会被省略</td>
+</tr>
+<tr>
+<td style="text-align:center">+n</td>
+<td style="text-align:center">目的地比你高几格（n高）</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">-n</td>
+<td style="text-align:center">目的地比你低几格（n低）</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">×n</td>
+<td style="text-align:center">目的地斜方向几格</td>
+<td style="text-align:center">即在x方向偏移几格</td>
+</tr>
+<tr>
+<td style="text-align:center">hh</td>
+<td style="text-align:center">head hitter，即顶头跳</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">X/Z</td>
+<td style="text-align:center">朝向x轴或者z轴</td>
+<td style="text-align:center">用于旋转跳</td>
+</tr>
+<tr>
+<td style="text-align:center">n2n（或n To n）</td>
+<td style="text-align:center">朝向x轴或者z轴</td>
+<td style="text-align:center">用于旋转跳</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[P2482 [SDOI2010]猪国杀（试着做做）]]></title>
         <id>https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/</id>
