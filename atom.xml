@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-16T12:41:07.764Z</updated>
+    <updated>2020-03-16T12:42:53.967Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -19,7 +19,8 @@
 反之亦然同理，推论自然成立，略去过程QED，由上可知证毕。</p>
 <p>三年oi一场空，不开<code>long long</code>见祖宗。<br>
 三年oi一场空，三道原题见祖宗。<br>
-三年oi一场空，<code>D1</code>爆炸见祖宗<br>
+三年oi一场空，<code>D1</code>爆炸见祖宗。<br>
+三年oi一场空，交错文件见祖宗<br>
 十年oi一场空，不打对拍见祖宗。<br>
 十年oi一场空，数组开小见祖宗。<br>
 十年oi一场空，一场初赛<code>AFO</code>。</p>
