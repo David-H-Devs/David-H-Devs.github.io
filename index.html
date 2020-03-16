@@ -1,232 +1,404 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8" />
-<title>
-    谷俊的小屋
-</title>
-<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-<meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<meta name="author" content="谷俊">
-<meta name="description" content="因为头像画N95的角度很刁钻且头像不是人，所以不用戴口罩qwq">
-<meta name="keywords" content="">
-<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
-<link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css" />
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/js/Card/prism.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@1.0.12/CDN/css/Card/prism.min.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+      <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+        <meta charset="utf-8">
+        <meta name="referrer" content="never">
+        <title>谷俊的小屋</title>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/KaTeX/0.11.1/katex.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
+          <script src="https://david-h-devs.github.io//media/scripts/mdui.min.js"></script>
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Ma+Shan+Zheng&display=swap" rel="stylesheet">
+        <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+        <script src="https://david-h-devs.github.io//media/scripts/script.js"></script>
+        <script >hljs.initHighlightingOnLoad();</script>
         
-            <!--CDN样式-->
-            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
-            <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
-            
-                <script>
-                    (function() {
-                        var bp = document.createElement('script');
-                        var curProtocol = window.location.protocol.split(':')[0];
-                        if (curProtocol === 'https') {
-                            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                        } else {
-                            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                        }
-                        var s = document.getElementsByTagName("script")[0];
-                        s.parentNode.insertBefore(bp, s);
-                    })();
-                </script>
-                
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-</head>
 
-<body>
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo">
-                <a href="https://david-h-devs.github.io/">
-                    谷俊的小屋
-                </a>
-            </div>
-
-            <div class="menu navbar-right">
+    </head>
+    <body class="mdui-theme-primary-purple mdui-theme-accent-purple">
+        <header class=" mdui-m-b-3 header">
+                          <button class="mdui-btn daohang mdui-btn-icon mdui-btn-dense mdui-color-theme-500 mdui-ripple yinying mdui-m-t-1 mdui-m-l-1" mdui-menu="{target: '#demo-attr-cascade'}"><i class="mdui-icon material-icons">&#xe5d2;</i></button>
+                <ul class="mdui-menu " id="demo-attr-cascade">
                 
-                    <a class="menu-item" href="/">
-                        首页
-                    </a>
-                    
-                    <a class="menu-item" href="/archives">
-                        归档
-                    </a>
-                    
-                    <a class="menu-item" href="/tags">
-                        标签
-                    </a>
-                    
-                    <a class="menu-item" href="\posts">
-                        文章
-                    </a>
-                    
-                        <input id="switch_default" type="checkbox" class="switch_default">
-                        <label for="switch_default" class="toggleBtn"></label>
-            </div>
-            <form id="gridea-search-form" data-update="1584364593516" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-            </form>
+                        <li class="mdui-menu-item">
+                          <a href="/" class="mdui-ripple">首页</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="/archives" class="mdui-ripple">归档</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="/tags" class="mdui-ripple">标签</a>
+                        </li>
+                
+                        <li class="mdui-menu-item">
+                          <a href="\posts" class="mdui-ripple">文章</a>
+                        </li>
+                
+                      </ul>
+                      <div class="mdui-text-center">
+                      <div class="mdui-typo-display-4 mdui-m-b-3 index-title">谷俊的小屋</div>
+                      <div class="mdui-typo-headline">你好啊！欢迎来到我的小屋！</div>
+                      </div>
+
+        </header >
+        <div class="mdui-container">
+                <div class="mdui-row">
+                        <div class="mdui-col-md-6 mdui-col-offset-md-3 ">
+                                                     
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/oi-geng-men/" class="index-list-title">OI梗们</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>即得易见平凡，仿照上例显然。留作习题答案略，读者自证不难。
+反之亦然同理，推论自然成立，略去过程QED，由上可知证毕。
+三年oi一场空，不开long long见祖宗。
+三年oi一场空，三道原题见祖宗。
+三年oi一场空，D1爆炸见祖宗。
+三年...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/post/oi-geng-men/" class="index-list-biaoqian mdui-float-right yinying">2020-03-16</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/" class="index-list-title">新建博客撒花</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>在3月7日（确切的来说几天前就建好了，但这次是正式版），我的博客建成了！
+这要感谢搭建Gridea的工程师们与我的朋友LewisLi（这是他的博客）。
+总而言之，我的小博客总算建好了！以后还会陆续加一些东西，比如2D小人这类的qwq。
+都要...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/" class="index-list-biaoqian mdui-float-right yinying">2020-03-07</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/chu-yi-ji-xun-lian-xi-di-san-zhou-ti-jie/" class="index-list-title">初一集训练习（第三周） - 题解</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>这次好像多了1题，我们来看看。
+题目A
+题目描述
+有一个这样的问题，有一颗存在NNN个节点的树，同时默认111号节点是根，每个节点都有一个集合，这些集合可以看做是一个数组，刚开始默认集合都是空的。随着访问节点的推进，父亲的集合数字会被儿子节...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/KEljlz3MC/" class="index-list-biaoqian mdui-float-left yinying">作业</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/tag/Bi7NbF5TP/" class="index-list-biaoqian mdui-float-left yinying">算法</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="index-list-biaoqian mdui-float-left yinying">C++</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/chu-yi-ji-xun-lian-xi-di-san-zhou-ti-jie/" class="index-list-biaoqian mdui-float-right yinying">2020-03-16</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/" class="index-list-title">月赛讲评 #1</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>从这个月开始，每个月都会有1-2次月赛（在蒟蒻欢乐小窝里面的团队赛）
+本博客将会置顶7天后撤销置顶。
+我们来讲一下【GJR-001】2020 年 DH 3 月蒟蒻欢乐水题赛吧！
+题目A
+题目背景
+小明学会了好多数据结构，他想要加强求逆序对的...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/2aAMibQoR/" class="index-list-biaoqian mdui-float-left yinying">月赛讲评</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="index-list-biaoqian mdui-float-left yinying">C++</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/" class="index-list-biaoqian mdui-float-right yinying">2020-03-16</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/mu-biao-xiang-yao-zuo-de-he-xiang-yao-xue-de/" class="index-list-title">目标（想要做的和想要学的）</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>想要做的
+
+建一个网站（例如在WordPress上自己弄一个带live2d的网站）
+做猪国杀
+等
+
+想要学的
+
+数学
+平衡树
+线段树
+主席树
+等
+
+...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/post/mu-biao-xiang-yao-zuo-de-he-xiang-yao-xue-de/" class="index-list-biaoqian mdui-float-right yinying">2020-03-09</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/la-ge-lang-ri-cha-zhi-gong-shi/" class="index-list-title">拉格朗日插值公式</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>
+任给定FFF中(2n+2)(2n+2)(2n+2)个数x1x_1x1​，x2x_2x2​，…，xn+1x_{n+1}xn+1​，y1y_1y1​，y2y_2y2​，…，yn+1y_{n+1}yn+1​，其中x1x_1x1​，x2x_2x2...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/MMX2wL-by/" class="index-list-biaoqian mdui-float-left yinying">数学</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/la-ge-lang-ri-cha-zhi-gong-shi/" class="index-list-biaoqian mdui-float-right yinying">2020-03-09</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/mc-pao-ku-zhu-yu/" class="index-list-title">MC跑酷术语</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>最近好像入MC跑酷，但没有时间，所以就只能整理出一份术语表来看看了qwq
+
+
+
+名称
+释义
+特殊用途（具体解释）
+
+
+
+
+neo
+旋转跳
+
+
+
+bc
+脚到头顶方块的距离
+常用于顶头跳
+
+
+bm
+助跑距离
+
+
+
+b
+远，需要跳跃的距离
+一般远...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/post/mc-pao-ku-zhu-yu/" class="index-list-biaoqian mdui-float-right yinying">2020-03-09</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/" class="index-list-title">P2482 [SDOI2010]猪国杀（试着做做）</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>我们先抄一下题（惯例）。
+题目描述
+游戏背景
+《猪国杀》是一种多猪牌类回合制游戏，一共有 333 种角色：主猪，忠猪，反猪。每局游戏主猪有且只有 111 只，忠猪和反猪可以有多只，每只猪扮演 111 种角色。
+游戏目的
+主猪 / MP\te...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="index-list-biaoqian mdui-float-left yinying">C++</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/" class="index-list-biaoqian mdui-float-right yinying">2020-03-08</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/ge-chong-mo-ban/" class="index-list-title">各种模板</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>快读模板
+int read()
+{
+    int a = 0, b = 1;
+    char c = getchar();
+    while (c &gt;= '9' || c &lt;= '0')
+    {
+        if ...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="index-list-biaoqian mdui-float-left yinying">C++</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/ge-chong-mo-ban/" class="index-list-biaoqian mdui-float-right yinying">2020-03-08</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/mo-dui/" class="index-list-title">莫队</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>
+并非是我们选择了命运，而是命运选择了我们。
+
+我们今天来讲一个所有人都知道的算法。
+众所周知，莫队算法是由莫涛大神提出的，一种玄学骗分的区间操作算法。以简短的框架、简单的板子（大雾）和优秀的复杂度闻名于世。然而，莫队算法的题目都是较高的难...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/Bi7NbF5TP/" class="index-list-biaoqian mdui-float-left yinying">算法</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="index-list-biaoqian mdui-float-left yinying">C++</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/mo-dui/" class="index-list-biaoqian mdui-float-right yinying">2020-03-08</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+                            <article class="mdui-m-t-4 index-list mdui-shadow-15 mdui-hoverable mdui-p-a-2 q">
+                                    <div class="mdui-row">
+                                            <div class="mdui-col-xs-12 ">
+                                              <div class="mdui-row mdui-m-b-2">
+                                                <div class="mdui-col-xs-12 mdui-col-sm-8">
+                                                    <div class="mdui-typo-headline mdui-m-b-2"><a href="https://david-h-devs.github.io/post/xian-duan-shu/" class="index-list-title">二叉树</a></div>
+                                                    <div class="mdui-typo-body-2 index-list-neirong"><p>（由于Gitalk暂时配置很麻烦，所以我等他配置好之后我在用吧！）
+在计算机科学中，二叉树是每个结点最多有两个子树的树结构。通常子树被称作“左子树”（left subtree）和“右子树”（right subtree）。二叉树常被用于实现二...</p></div>
+                                                </div>
+                                                <div class="mdui-col-xs-12 mdui-col-sm-4 "><div class="index-list-img mdui-shadow-8"></div></div>
+                                              </div>
+                                              
+                                              <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="index-list-biaoqian mdui-float-left yinying">C++</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/tag/7d8ZtXad0d/" class="index-list-biaoqian mdui-float-left yinying">数据结构</a>
+                                               
+                                              <a href="https://david-h-devs.github.io/post/xian-duan-shu/" class="index-list-biaoqian mdui-float-right yinying">2020-03-07</a>
+                                              
+
+                                            </div>
+                                          </div>
+
+                            </article>
+
+
+                                                   <nav class="mdui-m-y-3">
+                         
+                         
+                         </nav>
+
+                        </div>
+                 </div>
+          
         </div>
-    </nav>
-
-    
-        <nav class="navbar-mobile" id="nav-mobile">
-            <div class="container">
-                <div class="navbar-header">
-                    <div>
-                        <a href="https://david-h-devs.github.io/">
-                            谷俊的小屋
-                        </a>
-                        <!--en-->
-                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
-                        <!--zh-->
-                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
-                    </div>
-                    <form id="gridea-search-form" data-update="1584364593516" action="/search/index.html">
-                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-                    </form>
-                    <!--en-->
-                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
-                    <!--zh-->
-                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
-
-                </div>
-                <div class="menu" id="mobile-menu">
-                    
-                        <a class="menu-item" href="/">
-                            首页
-                        </a>
-                        
-                        <a class="menu-item" href="/archives">
-                            归档
-                        </a>
-                        
-                        <a class="menu-item" href="/tags">
-                            标签
-                        </a>
-                        
-                        <a class="menu-item" href="\posts">
-                            文章
-                        </a>
-                        
-                </div>
-            </div>
-        </nav>
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementById("menu-toggle-en");
-        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
-
-        var mobileMenu = document.getElementById("mobile-menu");
-        if (toggleMenu.display != "none") {
-            if (toggleMenu.classList.contains("active")) {
-                toggleMenu.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        } else if (toggleMenu_zh.display != "none") {
-            if (toggleMenu_zh.classList.contains("active")) {
-                toggleMenu_zh.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu_zh.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        }
-
-    }
-</script>
-            <div class="main">
-                <div class="container">
-                    <div class="intro">
-                        <div class="avatar">
-                            <a href="https://david-h-devs.github.io/"><img src="https://david-h-devs.github.io//images/avatar.png?v=1584364593516"></a>
-                        </div>
-                        <div class="nickname">
-                            谷俊
-                        </div>
-                        <div class="description">
-                            <span id="subtitle">
-                                因为头像画N95的角度很刁钻且头像不是人，所以不用戴口罩qwq
-                            </span>
-                        </div>
-                        <div class="links">
+        <footer class="footer mdui-m-t-5 mdui-text-center">
+               <nav class="social-links">
+                      <ul>
+                      
                             
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                                
-                                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-</body>
-<script>
-    // type 
-    var typed = new Typed("#subtitle", {
-        strings: ['因为头像画N95的角度很刁钻且头像不是人，所以不用戴口罩qwq', '', ''],
-        startDelay: 10,
-        typeSpeed: 200,
-        loop: true,
-        backSpeed: 100,
-        showCursor: true
-    });
-    //head title
-    var titleTime;
-    document.addEventListener("visibilitychange", function() {
-        document.hidden ? (document.title = "\uD83D\uDE25" + OriginTitile, clearTimeout(titleTime)) : (document.title = "\uD83D\uDE1D" + OriginTitile, titleTime = setTimeout(function() {
-            document.title = OriginTitile
-        }, 2E3))
-    });
-    var OriginTitile = document.title;
-</script>
-
-    <div id="player"></div>
-    
-        <footer id="footer" class="footer">
-            <div class="copyright">
-                
-                        <span id="timeDate">载入天数...载入时分秒...</span>
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                            
+                           
+                      </ul>
+                    </nav>
+                    <div class="copyright">
+                      <p><span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
     function createtime() { 
@@ -242,128 +414,8 @@
     } 
 setInterval("createtime()",250);
 </script>
-<script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
-                            
-                                <b id="hitokoto"></b><br>
-                                
-                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
-            <path
-                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
-                fill="#93b5cf"></path>
-        </svg>
-                                        谷俊的小屋 &copy;Copyright
-                                            <script>
-                                                var date = new Date();
-                                                document.write("" + date.getFullYear());
-                                            </script>
-                                            | Powered by
-                                            <a href="https://www.github.com" target="_blank">
-                                                Github Pages
-                                            </a>
-            </div>
-            <div id="update" style="display:none;">
-                on
-            </div>
-            
-                <div id="version" style="display:none;">
-                    1.7.3
-                </div>
-                
-                    <script>
-                        var pat = '';
-                        
-                        pat = ':4000';
-                        
-                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + pat + '</div>')
-                    </script>
-        </footer>
-        
-            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
-            
-                <script>
-                    
-
-                    function LoadPlayer() {
-                        var music_array = [];
-                        
-                        music_array.push({
-                            name: 'You',
-                            url: 'https://music.163.com/#/song?id=3932159',
-                            artist: 'Approaching Nirvana',
-                            cover: 'http://p1.music.126.net/4d8hnmrMxDrKnn_0i1JqyA==/1728432278871211.jpg?param=130y130',
-                        });
-                        
-                        console.log(" MusicList: " + music_array);
-                        
-                        const ap = new APlayer({
-                            container: document.getElementById('player'),
-                            fixed: true,
-                            audio: music_array
-                        });
-                        
-                    }
-                    LoadPlayer();
-                    
-                    
-                    loadlive2d();
-                    
-                    
-                    hitokoto();
-                    
-                    getStar();
-                    hljs.initHighlighting();
-                    console.clear();
-                    
-                    CheckVersion();
-                    
-                    var newDate = new Date();
-                    newDate.setTime(1584364593516);
-                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
-                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
-                </script>
-                
-                    <div id="tp-weather-widget" style="background: #666;display: flex;"></div>
-                    <script>
-                        (function(T, h, i, n, k, P, a, g, e) {
-                            g = function() {
-                                P = h.createElement(i);
-                                a = h.getElementsByTagName(i)[0];
-                                P.src = k;
-                                P.charset = "utf-8";
-                                P.async = 1;
-                                a.parentNode.insertBefore(P, a)
-                            };
-                            T["ThinkPageWeatherWidgetObject"] = n;
-                            T[n] || (T[n] = function() {
-                                (T[n].q = T[n].q || []).push(arguments)
-                            });
-                            T[n].l = +new Date();
-                            if (T.attachEvent) {
-                                T.attachEvent("onload", g)
-                            } else {
-                                T.addEventListener("load", g, false)
-                            }
-                        }(window, document, "script", "tpwidget", "//widget.seniverse.com/widget/chameleon.js"))
-                    </script>
-                    <script>
-                        var wearther_margin = "10px 10px";
-                        
-                        wearther_margin = "70px 5px";
-                        
-                        tpwidget("init", {
-                            "flavor": "bubble",
-                            "location": "WX4FBXXFKE4F",
-                            "geolocation": "enabled",
-                            "position": "bottom-left",
-                            "margin": wearther_margin,
-                            "language": "zh-chs",
-                            "unit": "c",
-                            "theme": "chameleon",
-                            "uid": "UFC977E1C7",
-                            "hash": "213ad798bc472dc365da3a9d4a9ff115"
-                        });
-                        tpwidget("show");
-                    </script>
-                    
-
+<script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script> <br/> Theme <a href="https://github.com/shanbufun/gridea-theme-jia" target="_blank"  title="佳"  >Jia</a> by <a href="https://shanbu.fun/" target="_blank"  title="山卜方" >Shanbufun</a> </p>
+                  </div>
+              </footer>
+    </body>
 </html>
