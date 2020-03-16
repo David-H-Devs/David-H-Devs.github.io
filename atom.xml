@@ -2,13 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-16T12:06:07.494Z</updated>
+    <updated>2020-03-16T12:40:43.670Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
     <logo>https://david-h-devs.github.io/images/avatar.png</logo>
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[OI梗们]]></title>
+        <id>https://david-h-devs.github.io/post/oi-geng-men/</id>
+        <link href="https://david-h-devs.github.io/post/oi-geng-men/">
+        </link>
+        <updated>2020-03-16T12:39:17.000Z</updated>
+        <content type="html"><![CDATA[<p>即得易见平凡，仿照上例显然。留作习题答案略，读者自证不难。<br>
+反之亦然同理，推论自然成立，略去过程QED，由上可知证毕。</p>
+<p>三年oi一场空，不开<code>long long</code>见祖宗。<br>
+三年oi一场空，三道原题见祖宗。<br>
+三年oi一场空，<code>D1</code>爆炸见祖宗<br>
+十年oi一场空，不打对拍见祖宗。<br>
+十年oi一场空，数组开小见祖宗。<br>
+十年oi一场空，一场初赛<code>AFO</code>。</p>
+<p>十年oi一场空，<code>D1T3</code>见祖宗。<br>
+两天六题三棵树，<code>DP</code>要写高精度。</p>
+<p>NOIP提高难度 = 一天的普及难度 + 一天的省选难度<br>
+NOIP = <code>noi plus</code></p>
+<p>只有两种时间复杂度：<code>O(跑的出)</code>与<code>O(跑不出)</code>。</p>
+<p>我会写六种自动机：<code>WA</code> 自动机、<code>TLE</code> 自动机、<code>MLE</code> 自动机、<code>RE</code> 自动机、<code>CE</code> 自动机还有<code>UKE</code> 自动机。</p>
+<p>骗分过样例，暴力出奇迹<br>
+爆搜挂着机，打表出省一<br>
+N 方过百万，暴力踩标算<br>
+肥修赛大象，只是代码短</p>
+<p>稻花香里说丰年，听取WA声一片。<br>
+浔阳DP无音乐，终岁不闻AC声。<br>
+天若有情天亦老，人间CE是沧桑。<br>
+日啖RE三百颗，不辞长做岭南人。<br>
+暴力出奇迹，骗分过样例。<br>
+打表是数学，DP看运气。<br>
+穷举TLE，递推UKE。<br>
+模拟MLE，贪心还CE。<br>
+想要骗到分，一定有方法。<br>
+图论背模板，数论背公式。<br>
+动规背方程，高精背代码。<br>
+如果都没背，干脆输样例。<br>
+数组大十倍，RE变AC<br>
+只要胆子大，十亿开得下</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[月赛讲评 #1]]></title>
         <id>https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/</id>
