@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-17T06:57:36.528Z</updated>
+    <updated>2020-03-17T13:25:50.713Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -10,6 +10,44 @@
     <logo>https://david-h-devs.github.io/images/avatar.png</logo>
     <icon>https://david-h-devs.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 谷俊的小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[看内容]]></title>
+        <id>https://david-h-devs.github.io/post/kan-nei-rong/</id>
+        <link href="https://david-h-devs.github.io/post/kan-nei-rong/">
+        </link>
+        <updated>2020-03-17T13:25:30.000Z</updated>
+        <content type="html"><![CDATA[<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle mathsize="1.44em"><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mtext>关于评测结果的翻译</mtext></mstyle></mstyle></menclose></mstyle></mrow><annotation encoding="application/x-tex">\Large\boxed{\text{关于评测结果的翻译}}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.9631951999999997em;vertical-align:-0.4896000000000001em;"></span><span class="mord sizing reset-size6 size8"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0233299999999999em;"><span style="top:-3.44em;"><span class="pstrut" style="height:3.44em;"></span><span class="mord boxpad"><span class="mord"><span class="mord text"><span class="mord cjk_fallback">关于评测结果的翻译</span></span></span></span></span><span style="top:-3.0999999999999996em;"><span class="pstrut" style="height:3.44em;"></span><span class="stretchy fbox" style="height:1.36333em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3400000000000001em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mtable><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#52C410"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">AC</mtext><mtext> </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Answer Coarse,粗劣的答案</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#FADB14"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">CE</mtext><mtext> </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Compile Easily,轻松通过编译</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#E74C3C"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">PC</mtext><mtext> </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Perfect Compile 完美的编译</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#E74C3C"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">WA</mtext><mtext> </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Wonderful Answer,好答案</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#9D3DCF"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">RE</mtext><mtext> </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Run Excellently,完美运行</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#052242"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">TLE</mtext><mtext>  </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Time Limit Enough,时间充裕</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#052242"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">MLE</mtext><mtext>  </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Memory Limit Enough,内存充裕</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#052242"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">OLE</mtext><mtext>  </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Output Limit Enough,输出合法</mtext></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><mstyle mathsize="1.2em"><menclose mathbackground="#0E1D69"><mstyle mathcolor="white"><mrow><mtext> </mtext><mtext mathvariant="monospace">UKE</mtext><mtext>  </mtext></mrow></mstyle></menclose></mstyle></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>:</mo><mtext>Unbelievably Keep Enough Score,难以置信地保持足够的分数</mtext></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\large\colorbox{#52C410}{\color{white}\texttt{ AC }}&amp;:\text{Answer Coarse,粗劣的答案}  \\
+\large\colorbox{#FADB14}{\color{white}\texttt{ CE }}&amp;:\text{Compile Easily,轻松通过编译}  \\
+\large\colorbox{#E74C3C}{\color{white}\texttt{ PC }}&amp;:\text{Perfect  Compile 完美的编译}  \\
+\large\colorbox{#E74C3C}{\color{white}\texttt{ WA }}&amp;:\text{Wonderful Answer,好答案}  \\
+\large\colorbox{#9D3DCF}{\color{white}\texttt{ RE }}&amp;:\text{Run Excellently,完美运行}  \\
+\large\colorbox{#052242}{\color{white}\texttt{\:TLE\;}}&amp;:\text{Time Limit Enough,时间充裕}  \\
+\large\colorbox{#052242}{\color{white}\texttt{\:MLE\;}}&amp;:\text{Memory Limit Enough,内存充裕}  \\
+\large\colorbox{#052242}{\color{white}\texttt{\:OLE\;}}&amp;:\text{Output Limit Enough,输出合法}  \\
+\large\colorbox{#0E1D69}{\color{white}\texttt{\:UKE\;}}&amp;:\text{Unbelievably Keep Enough Score,难以置信地保持足够的分数}  
+\end{aligned}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:15.779988000000001em;vertical-align:-7.639994em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:8.139994000000002em;"><span style="top:-10.246662em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#52C410;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mord texttt" style="color:white;"> AC </span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:-8.49333em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#FADB14;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mord texttt" style="color:white;"> CE </span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:-6.739998000000002em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#E74C3C;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mord texttt" style="color:white;"> PC </span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:-4.986666000000001em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#E74C3C;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mord texttt" style="color:white;"> WA </span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:-3.233334000000002em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#9D3DCF;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mord texttt" style="color:white;"> RE </span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:-1.4800020000000016em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#052242;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mspace" style="color:white;margin-right:0.2222em;"></span><span class="mord texttt" style="color:white;">TLE</span><span class="mspace" style="color:white;margin-right:0.2777em;"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:0.27332999999999874em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#052242;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mspace" style="color:white;margin-right:0.2222em;"></span><span class="mord texttt" style="color:white;">MLE</span><span class="mspace" style="color:white;margin-right:0.2777em;"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:2.026661999999999em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#052242;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mspace" style="color:white;margin-right:0.2222em;"></span><span class="mord texttt" style="color:white;">OLE</span><span class="mspace" style="color:white;margin-right:0.2777em;"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span><span style="top:3.7799939999999994em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord"><span class="mord sizing reset-size6 size7"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9111100000000001em;"><span style="top:-2.9111100000000003em;"><span class="pstrut" style="height:3.21111em;"></span><span class="stretchy colorbox" style="height:1.2111100000000001em;background-color:#0E1D69;"></span></span><span style="top:-3.21111em;"><span class="pstrut" style="height:3.21111em;"></span><span class="mord boxpad"><span class="mord text" style="color:white;"><span class="mspace" style="color:white;margin-right:0.2222em;"></span><span class="mord texttt" style="color:white;">UKE</span><span class="mspace" style="color:white;margin-right:0.2777em;"></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3em;"><span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:7.639994em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:8.139994000000002em;"><span style="top:-10.139994000000002em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Answer Coarse,</span><span class="mord cjk_fallback">粗劣的答案</span></span></span></span><span style="top:-8.386662000000001em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Compile Easily,</span><span class="mord cjk_fallback">轻松通过编译</span></span></span></span><span style="top:-6.633330000000002em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Perfect Compile </span><span class="mord cjk_fallback">完美的编译</span></span></span></span><span style="top:-4.879998000000001em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Wonderful Answer,</span><span class="mord cjk_fallback">好答案</span></span></span></span><span style="top:-3.126666000000002em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Run Excellently,</span><span class="mord cjk_fallback">完美运行</span></span></span></span><span style="top:-1.3733340000000016em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Time Limit Enough,</span><span class="mord cjk_fallback">时间充裕</span></span></span></span><span style="top:0.3799979999999987em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Memory Limit Enough,</span><span class="mord cjk_fallback">内存充裕</span></span></span></span><span style="top:2.133329999999999em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Output Limit Enough,</span><span class="mord cjk_fallback">输出合法</span></span></span></span><span style="top:3.8866619999999994em;"><span class="pstrut" style="height:3.093332em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord text"><span class="mord">Unbelievably Keep Enough Score,</span><span class="mord cjk_fallback">难以置信地保持足够的分数</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:7.639994em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[学校笔记大集合（副科）]]></title>
         <id>https://david-h-devs.github.io/post/xue-xiao-bi-ji-da-ji-he-fu-ke/</id>
@@ -936,109 +974,6 @@ int main() {
         ans[q[i].id] = now;
     }
     for(int i = 1; i &lt;= m; ++i) printi(ans[i]), putchar('\n');
-    return 0;
-}
-</code></pre>
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-<pre><code>   if (typeof LivereTower === 'function') { return; }
-
-   j = d.createElement(s);
-   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-   j.async = true;
-
-   e.parentNode.insertBefore(j, e);
-</code></pre>
-<p>})(document, 'script');<br>
-</script><br>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
-</div>
-<!-- City版安装代码已完成 -->]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[二叉树]]></title>
-        <id>https://david-h-devs.github.io/post/xian-duan-shu/</id>
-        <link href="https://david-h-devs.github.io/post/xian-duan-shu/">
-        </link>
-        <updated>2020-03-07T15:13:01.000Z</updated>
-        <content type="html"><![CDATA[<p>（由于Gitalk暂时配置很麻烦，所以我等他配置好之后我在用吧！）</p>
-<p>在计算机科学中，二叉树是每个结点最多有两个子树的树结构。通常子树被称作“左子树”（left subtree）和“右子树”（right subtree）。二叉树常被用于实现二叉查找树和二叉堆。<br>
-一棵深度为k，且有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.932438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>个结点的二叉树，称为满二叉树。这种树的特点是每一层上的结点数都是最大结点数。而在一棵二叉树中，除最后一层外，若其余层都是满的，并且或者最后一层是满的，或者是在右边缺少连续若干结点，则此二叉树为完全二叉树。具有n个结点的完全二叉树的深度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi></mrow><mo>(</mo><mi>log</mi><mo>⁡</mo><mn>2</mn><mi>n</mi><mo>)</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathrm{floor}(\log 2n)+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm" style="margin-right:0.07778em;">f</span><span class="mord mathrm">l</span><span class="mord mathrm">o</span><span class="mord mathrm">o</span><span class="mord mathrm">r</span></span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>。深度为k的完全二叉树，至少有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{k-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>个叶子结点，至多有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.932438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>个结点。</p>
-<p>二叉树是递归定义的，其结点有左右子树之分，逻辑上二叉树有五种基本形态：</p>
-<ol>
-<li>空二叉树；</li>
-<li>只有一个根节点的二叉树；</li>
-<li>只有左子树；</li>
-<li>只有右子树；</li>
-<li>完全二叉树。</li>
-</ol>
-<p>注意：二叉树不是树</p>
-<p>我们来简要的写写二叉树的代码（例如去重搜索）：</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-#include &lt;cstdio&gt;
-
-using namespace std;
-
-const int N = 1e5 + 10;
-
-struct Node
-{
-    int val, lc, rc, w;
-} T[N];
-
-int n, cnt = 1, a[N];
-
-void ins(int o, int v)
-{
-    if (!(T[o].val))
-    {
-        T[o].val = v;
-        T[o].w++;
-        return;
-    }
-    if (T[o].val == v)
-    {
-        T[o].w++;
-        return;
-    }
-    if (v &lt; T[o].val)
-    {
-        if (!(T[o].lc))
-            T[o].lc = ++cnt;
-        ins(T[o].lc, v);
-    }
-    if (v &gt; T[o].val)
-    {
-        if (!T[o].rc)
-            T[o].rc = ++cnt;
-        ins(T[o].rc, v);
-    }
-}
-
-void dfs(int o)
-{
-    if (!T[o].val)
-        return;
-    if (T[o].lc)
-        dfs(T[o].lc);
-    printf(&quot;%d &quot;, T[o].val);
-    if (T[o].rc)
-        dfs(T[o].rc);
-}
-
-int main()
-{
-    scanf(&quot;%d&quot;, &amp;n);
-    for (int i = 1; i &lt;= n; i++)
-        scanf(&quot;%d&quot;, a + i);
-    for (int i = 1; i &lt;= n; i++)
-    {
-        ins(1, a[i]);
-    }
-    dfs(1);
     return 0;
 }
 </code></pre>
