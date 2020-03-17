@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-17T06:23:22.083Z</updated>
+    <updated>2020-03-17T06:31:37.041Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -78,7 +78,24 @@ N 方过百万，暴力踩标算<br>
 如果都没背，干脆输样例。<br>
 数组大十倍，RE变AC<br>
 只要胆子大，十亿开得下</p>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[月赛讲评 #1]]></title>
@@ -257,7 +274,24 @@ AC代码：<br>
 AC代码：<br>
 此题我还没有较优的AC方法，而且评测机可能抽风了，故希望有人能投递一下QAQ。<br>
 居然没有人AC......</p>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[想要做的和想要学的]]></title>
@@ -279,7 +313,24 @@ AC代码：<br>
 <li>主席树<br>
 等</li>
 </ol>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[拉格朗日插值公式]]></title>
@@ -300,7 +351,24 @@ AC代码：<br>
 </blockquote>
 <p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mfrac><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></mfrac><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub><mfrac><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">y=y_1\dfrac{x-x_2}{x_1-x_2}+y_2\dfrac{x-x_1}{x_2-x_1}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.09633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2603300000000002em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.09633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2603300000000002em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[MC跑酷术语]]></title>
@@ -370,7 +438,24 @@ AC代码：<br>
 </tr>
 </tbody>
 </table>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[P2482 [SDOI2010]猪国杀（试着做做）]]></title>
@@ -477,7 +562,24 @@ J J J J J J D
 <h1 id="自己试着想想">自己试着想想</h1>
 <p>我们先来理一下思路：<br>
 首先，我们明确他有几种牌：『杀』、『闪』、『桃』</p>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[各种模板]]></title>
@@ -512,7 +614,24 @@ J J J J J J D
     putchar(x % 10 + '0');
 }
 </code></pre>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[莫队]]></title>
@@ -820,7 +939,24 @@ int main() {
     return 0;
 }
 </code></pre>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[二叉树]]></title>
@@ -906,6 +1042,23 @@ int main()
     return 0;
 }
 </code></pre>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
 </feed>
