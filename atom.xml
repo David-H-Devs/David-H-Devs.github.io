@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-18T14:11:11.346Z</updated>
+    <updated>2020-03-18T14:14:24.073Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -74,7 +74,24 @@
 <p>理解一下，我们就开始讲下一个内容了。</p>
 <h2 id="双向链表">双向链表</h2>
 <p>双向链表的结构体将<code>node *next</code>变为了<code>node *left</code>和<code>node *right</code>，分别代表前一个和下一个（或者也可以写为<code>pre</code>和<code>next</code>）</p>
-]]></content>
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+<pre><code>   if (typeof LivereTower === 'function') { return; }
+
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+
+   e.parentNode.insertBefore(j, e);
+</code></pre>
+<p>})(document, 'script');<br>
+</script><br>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
+</div>
+<!-- City版安装代码已完成 -->]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[无聊中写的]]></title>
