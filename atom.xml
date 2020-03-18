@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://david-h-devs.github.io/</id>
     <title>谷俊的小屋</title>
-    <updated>2020-03-18T14:58:25.637Z</updated>
+    <updated>2020-03-18T15:04:11.299Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://david-h-devs.github.io/"/>
     <link rel="self" href="https://david-h-devs.github.io/atom.xml"/>
@@ -65,6 +65,7 @@
 <p>对于一条边<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi><mo>=</mo><mo>(</mo><mi>u</mi><mo separator="true">,</mo><mi>v</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">e=(u,v)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">u</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mclose">)</span></span></span></span>，若<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>u</mi><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u=v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span>，则<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>e</mi></mrow><annotation encoding="application/x-tex">e</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">e</span></span></span></span>被称作一个自环。</p>
 <p>剩下的，等我讲到再说吧。</p>
 <h2 id="图的存储">图的存储</h2>
+<p>方法中的<code>dfs</code>是遍历整张图。</p>
 <h3 id="法一直接存储">法一：直接存储</h3>
 <pre><code class="language-cpp">#include &lt;iostream&gt;
 #include &lt;vector&gt;
@@ -124,6 +125,102 @@ int main()
 <h4 id="应用">应用</h4>
 <p>这个方法效率低下，一般不用于遍历。<br>
 在Kruskal算法（在讲最小生成树的时候会讲）中，由于需要将边按边权排序，需要直接存边。</p>
+<h3 id="法二邻接矩阵">法二：邻接矩阵</h3>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int n, m;
+vector&lt;bool&gt; vis;
+vector&lt;vector&lt;bool&gt;&gt; adj;
+
+bool find_edge(int u, int v) { return adj[u][v]; }
+
+void dfs(int u)
+{
+    if (vis[u])
+        return;
+    vis[u] = true;
+    for (int v = 1; v &lt;= n; ++v)
+    {
+        if (adj[u][v])
+        {
+            dfs(v);
+        }
+    }
+}
+
+int main()
+{
+    cin &gt;&gt; n &gt;&gt; m;
+    vis.resize(n + 1, false);
+    adj.resize(n + 1, vector&lt;bool&gt;(n + 1, false));
+    for (int i = 1; i &lt;= m; ++i)
+    {
+        int u, v;
+        cin &gt;&gt; u &gt;&gt; v;
+        adj[u][v] = true;
+    }
+    return 0;
+}
+</code></pre>
+<h4 id="时空复杂度-2">时空复杂度</h4>
+<p>查询是否存在：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span><br>
+遍历一个点的出边：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span><br>
+遍历整个图：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><br>
+空间复杂度：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<h4 id="应用-2">应用</h4>
+<blockquote>
+<p>邻接矩阵只适用于没有重边（或重边可以忽略）的情况。<br>
+其最显著的优点是可以<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>查询一条边是否存在。<br>
+由于邻接矩阵在稀疏图上效率很低（尤其是在点数较多的图上，空间无法承受），所以一般只会在稠密图上使用邻接矩阵。</p>
+</blockquote>
+<h3 id="法三邻接表">法三：邻接表</h3>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int n, m;
+vector&lt;bool&gt; vis;
+vector&lt;vector&lt;int&gt;&gt; adj;
+
+bool find_edge(int u, int v)
+{
+    for (int i = 0; i &lt; adj[u].size(); ++i)
+    {
+        if (adj[u][i] == v)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+void dfs(int u)
+{
+    if (vis[u])
+        return;
+    vis[u] = true;
+    for (int i = 0; i &lt; adj[u].size(); ++i)
+        dfs(adj[u][i]);
+}
+
+int main()
+{
+    cin &gt;&gt; n &gt;&gt; m;
+    vis.resize(n + 1, false);
+    adj.resize(n + 1);
+    for (int i = 1; i &lt;= m; ++i)
+    {
+        int u, v;
+        cin &gt;&gt; u &gt;&gt; v;
+        adj[u].push_back(v);
+    }
+    return 0;
+}
+</code></pre>
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
 	<script type="text/javascript">
