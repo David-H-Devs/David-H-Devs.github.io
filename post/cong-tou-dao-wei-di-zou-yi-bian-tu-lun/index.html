@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>从头到尾地走一遍图论（持续更新中） | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1584543849378">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1584544120249">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="从头到尾地走一遍图论（持续更新中） | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
@@ -40,7 +40,7 @@ SPFA
       <div class="main-content">
         <div class="site-header">
   <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1584543849378" alt="">
+  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1584544120249" alt="">
   </a>
   <h1 class="site-title">
     谷俊的小屋
@@ -106,7 +106,7 @@ SPFA
                 2020-03-18
               </span>
               <span>
-                8 min read
+                10 min read
               </span>
               
                 <a href="https://david-h-devs.github.io/tag/4EksnvqBC/" class="post-tag">
@@ -328,6 +328,66 @@ int main()
     return 0;
 }
 </code></pre>
+<h4 id="时空复杂度-3">时空复杂度</h4>
+<p>查询是否存在：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>d</mi><mo>+</mo></msup><mo>(</mo><mi>u</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">O(d^+(u))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.021331em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">u</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>（用二分，则<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>log</mi><mo>⁡</mo><mo>(</mo><msup><mi>d</mi><mo>+</mo></msup><mo>(</mo><mi>u</mi><mo>)</mo><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">O(\log(d^+(u)))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.021331em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">u</span><span class="mclose">)</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span>）<br>
+遍历一个点的出边：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>d</mi><mo>+</mo></msup><mo>(</mo><mi>u</mi><mo>)</mo><mo>)</mo></mrow><annotation encoding="application/x-tex">O(d^+(u))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.021331em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">u</span><span class="mclose">)</span><span class="mclose">)</span></span></span></span><br>
+遍历整个图：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>+</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n+m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span><br>
+空间复杂度：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span></p>
+<h4 id="应用-3">应用</h4>
+<p>存各种图都很适合，除非有特殊需求（如需要快速查询一条边是否存在，且点数较少，可以使用邻接矩阵）。<br>
+尤其适用于需要对一个点的所有出边进行排序的场合。</p>
+<h3 id="法四链式前向星">法四：链式前向星</h3>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int n, m;
+vector&lt;bool&gt; vis;
+vector&lt;int&gt; head, nxt, to;
+
+void add(int u, int v)
+{
+    nxt.push_back(head[u]);
+    head[u] = to.size();
+    to.push_back(v);
+}
+
+bool find_edge(int u, int v)
+{
+    for (int i = head[u]; ~i; i = nxt[i])
+    { // ~i 表示 i != -1
+        if (to[i] == v)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+void dfs(int u)
+{
+    if (vis[u])
+        return;
+    vis[u] = true;
+    for (int i = head[u]; ~i; i = nxt[i])
+        dfs(to[i]);
+}
+
+int main()
+{
+    cin &gt;&gt; n &gt;&gt; m;
+    vis.resize(n + 1, false);
+    head.resize(n + 1, -1);
+    for (int i = 1; i &lt;= m; ++i)
+    {
+        int u, v;
+        cin &gt;&gt; u &gt;&gt; v;
+        add(u, v);
+    }
+    return 0;
+}
+</code></pre>
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
 	<script type="text/javascript">
@@ -373,7 +433,13 @@ int main()
 <li><a href="#%E5%BA%94%E7%94%A8-2">应用</a></li>
 </ul>
 </li>
-<li><a href="#%E6%B3%95%E4%B8%89%E9%82%BB%E6%8E%A5%E8%A1%A8">法三：邻接表</a></li>
+<li><a href="#%E6%B3%95%E4%B8%89%E9%82%BB%E6%8E%A5%E8%A1%A8">法三：邻接表</a>
+<ul>
+<li><a href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6-3">时空复杂度</a></li>
+<li><a href="#%E5%BA%94%E7%94%A8-3">应用</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B3%95%E5%9B%9B%E9%93%BE%E5%BC%8F%E5%89%8D%E5%90%91%E6%98%9F">法四：链式前向星</a></li>
 </ul>
 </li>
 </ul>
