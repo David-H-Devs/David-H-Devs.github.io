@@ -2,45 +2,37 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MC跑酷术语 | 谷俊的小屋</title>
+<title>从头到尾地走一遍图论 | 谷俊的小屋</title>
 <link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1584540187951">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="MC跑酷术语 | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
+<link rel="alternate" type="application/atom+xml" title="从头到尾地走一遍图论 | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="最近好像入MC跑酷，但没有时间，所以就只能整理出一份术语表来看看了qwq
+    <meta name="description" content="本文将会按照这样的顺序来写：
 
+链表（我知道这是数据结构
+建图
+树（各种树
+分层图
+最短路
+Tarjan
+Dinic
+匈牙利
+最小生成树
+割点
+强连通分量
+流网络
+拓扑排序
+Dijkstra
+SPFA
+二分图
+那么，我们开始吧！
 
-
-名称
-释义
-特殊用途（具体解释）
-
-
-
-
-neo
-旋转跳
-
-
-
-bc
-脚到头顶方块的距离
-常用于顶头跳
-
-
-bm
-助跑距离
-
-
-
-b
-远，需要跳跃的距离
-一般远..." />
-    <meta name="keywords" content="" />
+本文的参..." />
+    <meta name="keywords" content="图论,C++" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
     <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
@@ -108,103 +100,90 @@ b
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              MC跑酷术语
+              从头到尾地走一遍图论
             </h2>
             <div class="post-info">
               <span>
-                2020-03-09
+                2020-03-18
               </span>
               <span>
-                1 min read
+                2 min read
               </span>
+              
+                <a href="https://david-h-devs.github.io/tag/4EksnvqBC/" class="post-tag">
+                  # 图论
+                </a>
+              
+                <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="post-tag">
+                  # C++
+                </a>
               
             </div>
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>最近好像入MC跑酷，但没有时间，所以就只能整理出一份术语表来看看了qwq</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">名称</th>
-<th style="text-align:center">释义</th>
-<th style="text-align:center">特殊用途（具体解释）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">neo</td>
-<td style="text-align:center">旋转跳</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">bc</td>
-<td style="text-align:center">脚到头顶方块的距离</td>
-<td style="text-align:center">常用于顶头跳</td>
-</tr>
-<tr>
-<td style="text-align:center">bm</td>
-<td style="text-align:center">助跑距离</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">b</td>
-<td style="text-align:center">远，需要跳跃的距离</td>
-<td style="text-align:center">一般远的单位会被省略</td>
-</tr>
-<tr>
-<td style="text-align:center">+n</td>
-<td style="text-align:center">目的地比你高几格（n高）</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">-n</td>
-<td style="text-align:center">目的地比你低几格（n低）</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">×n</td>
-<td style="text-align:center">目的地斜方向几格</td>
-<td style="text-align:center">即在x方向偏移几格</td>
-</tr>
-<tr>
-<td style="text-align:center">hh</td>
-<td style="text-align:center">head hitter，即顶头跳</td>
-<td style="text-align:center"></td>
-</tr>
-<tr>
-<td style="text-align:center">X/Z</td>
-<td style="text-align:center">朝向x轴或者z轴</td>
-<td style="text-align:center">用于旋转跳</td>
-</tr>
-<tr>
-<td style="text-align:center">n2n（或n To n）</td>
-<td style="text-align:center">朝向x轴或者z轴</td>
-<td style="text-align:center">用于旋转跳</td>
-</tr>
-</tbody>
-</table>
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
-	<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-<pre><code>   if (typeof LivereTower === 'function') { return; }
-
-   j = d.createElement(s);
-   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-   j.async = true;
-
-   e.parentNode.insertBefore(j, e);
+                <p>本文将会按照这样的顺序来写：</p>
+<ol>
+<li>链表（我知道这是数据结构</li>
+<li>建图</li>
+<li>树（各种树</li>
+<li>分层图</li>
+<li>最短路</li>
+<li>Tarjan</li>
+<li>Dinic</li>
+<li>匈牙利</li>
+<li>最小生成树</li>
+<li>割点</li>
+<li>强连通分量</li>
+<li>流网络</li>
+<li>拓扑排序</li>
+<li>Dijkstra</li>
+<li>SPFA</li>
+<li>二分图<br>
+那么，我们开始吧！</li>
+</ol>
+<p>本文的参考资料出自于：<a href="https://oi-wiki.org/">https://oi-wiki.org/</a>。</p>
+<h1 id="1-链表">1. 链表</h1>
+<p>前置知识：指针。<br>
+我们来瞅一眼OI Wiki上对链表的讲解：</p>
+<blockquote>
+<p>链表和数组都可用于存储数据，其中链表通过指针来连接元素，而数组则是把所有元素按次序依次存储。<br>
+同时，它也给出了两种数据结构的利与弊：<br>
+链表可以方便地删除、插入数据，操作次数是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。但也因为这样寻找读取数据的效率不如数组高，在随机访问数据中的操作次数是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>。<br>
+数组可以方便的寻找读取数据，在随机访问中操作次数是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。但删除、插入的操作次数却是却是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>次。</p>
+</blockquote>
+<h2 id="单向链表">单向链表</h2>
+<p>我们来看看单向链表：</p>
+<pre><code class="language-cpp">typedef struct
+{
+    int val;
+    node *next;
+} node ;
 </code></pre>
-<p>})(document, 'script');<br>
-</script><br>
-<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
-</div>
-<!-- City版安装代码已完成 -->
+<p>单向链表中包含<strong>数据域</strong>和<strong>指针域</strong>，其中数据域用于存放数据，指针域用来连接当前结点和下一节点。</p>
+<pre><code class="language-cpp">void insertNode(int i, Node *p)
+{
+    Node *node = new Node;
+    node-&gt;value = i;
+    node-&gt;next = p-&gt;next;
+    p-&gt;next = node;
+}
+</code></pre>
+<p>上面这串代码是在<code>p</code>和<code>p-&gt;next</code>之间插入一个值为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>数据。</p>
+<p>理解一下，我们就开始讲下一个内容了。</p>
+<h2 id="双向链表">双向链表</h2>
+
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li><a href="#1-%E9%93%BE%E8%A1%A8">1. 链表</a>
+<ul>
+<li><a href="#%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8">单向链表</a></li>
+<li><a href="#%E5%8F%8C%E5%90%91%E9%93%BE%E8%A1%A8">双向链表</a></li>
+</ul>
+</li>
+</ul>
+
               </div>
             </div>
           </article>
@@ -213,9 +192,9 @@ b
         
           <div class="next-post">
             <div class="next">下一篇</div>
-            <a href="https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/">
+            <a href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/">
               <h3 class="post-title">
-                P2482 [SDOI2010]猪国杀（试着做做）
+                无聊中写的
               </h3>
             </a>
           </div>
