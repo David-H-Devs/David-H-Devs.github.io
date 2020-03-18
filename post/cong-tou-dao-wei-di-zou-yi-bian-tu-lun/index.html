@@ -2,11 +2,11 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>从头到尾地走一遍图论 | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1584543300802">
+<title>从头到尾地走一遍图论（持续更新中） | 谷俊的小屋</title>
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1584543494951">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="从头到尾地走一遍图论 | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
+<link rel="alternate" type="application/atom+xml" title="从头到尾地走一遍图论（持续更新中） | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
@@ -40,7 +40,7 @@ SPFA
       <div class="main-content">
         <div class="site-header">
   <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1584543300802" alt="">
+  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1584543494951" alt="">
   </a>
   <h1 class="site-title">
     谷俊的小屋
@@ -99,7 +99,7 @@ SPFA
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              从头到尾地走一遍图论
+              从头到尾地走一遍图论（持续更新中）
             </h2>
             <div class="post-info">
               <span>
@@ -223,6 +223,14 @@ int main()
     return 0;
 }
 </code></pre>
+<h4 id="时空复杂度">时空复杂度</h4>
+<p>查询是否存在：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span><br>
+遍历一个点的出边：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span><br>
+遍历整个图：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nm)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span><br>
+空间复杂度：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>m</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(m)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">m</span><span class="mclose">)</span></span></span></span></p>
+<h4 id="应用">应用</h4>
+<p>这个方法效率低下，一般不用于遍历。<br>
+在Kruskal算法（在讲最小生成树的时候会讲）中，由于需要将边按边权排序，需要直接存边。</p>
 <!-- 来必力City版安装代码 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC80OTE0My8yNTYzNw==">
 	<script type="text/javascript">
@@ -256,7 +264,12 @@ int main()
 </li>
 <li><a href="#%E5%9B%BE%E7%9A%84%E5%AD%98%E5%82%A8">图的存储</a>
 <ul>
-<li><a href="#%E6%B3%95%E4%B8%80%E7%9B%B4%E6%8E%A5%E5%AD%98%E5%82%A8">法一：直接存储</a></li>
+<li><a href="#%E6%B3%95%E4%B8%80%E7%9B%B4%E6%8E%A5%E5%AD%98%E5%82%A8">法一：直接存储</a>
+<ul>
+<li><a href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6">时空复杂度</a></li>
+<li><a href="#%E5%BA%94%E7%94%A8">应用</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
