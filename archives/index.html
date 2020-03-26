@@ -1,58 +1,283 @@
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585120705065">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="你好啊！欢迎来到我的小屋！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585220668249">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="你好啊！欢迎来到我的小屋！" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585120705065" alt="">
-  </a>
-  <h1 class="site-title">
-    谷俊的小屋
-  </h1>
-  <p class="site-description">
-    你好啊！欢迎来到我的小屋！
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" target="_blank">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://david-h-devs.github.io/">
+        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585220668249" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://david-h-devs.github.io/">
+        <h1 class="site-title">谷俊的小屋</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          
+
+<div class="archives-container">
+  
+    <h2 class="year">2020</h2>
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/er-fen/">
+            <h2 class="post-title">
+              二分
+              <small>2020-03-24</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/">
+            <h2 class="post-title">
+              神经元网络的初步入门
+              <small>2020-03-24</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/you-yi-si-de-shu-xue-ti-mu/">
+            <h2 class="post-title">
+              有意思的数学题目
+              <small>2020-03-24</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/cong-tou-dao-wei-di-zou-yi-bian-tu-lun/">
+            <h2 class="post-title">
+              从头到尾地走一遍图论（持续更新中）
+              <small>2020-03-18</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/">
+            <h2 class="post-title">
+              无聊中写的
+              <small>2020-03-18</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/kan-nei-rong/">
+            <h2 class="post-title">
+              看内容
+              <small>2020-03-17</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/xue-xiao-bi-ji-da-ji-he-fu-ke/">
+            <h2 class="post-title">
+              学校笔记大集合（副科）
+              <small>2020-03-17</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/oi-geng-men/">
+            <h2 class="post-title">
+              OI梗们
+              <small>2020-03-16</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/">
+            <h2 class="post-title">
+              月赛讲评 #1
+              <small>2020-03-16</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/mu-biao-xiang-yao-zuo-de-he-xiang-yao-xue-de/">
+            <h2 class="post-title">
+              想要做的和想要学的
+              <small>2020-03-09</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/la-ge-lang-ri-cha-zhi-gong-shi/">
+            <h2 class="post-title">
+              拉格朗日插值公式
+              <small>2020-03-09</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/mc-pao-ku-zhu-yu/">
+            <h2 class="post-title">
+              MC跑酷术语
+              <small>2020-03-09</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/">
+            <h2 class="post-title">
+              P2482 [SDOI2010]猪国杀（试着做做）
+              <small>2020-03-08</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/ge-chong-mo-ban/">
+            <h2 class="post-title">
+              各种模板
+              <small>2020-03-08</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/mo-dui/">
+            <h2 class="post-title">
+              莫队
+              <small>2020-03-08</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/xian-duan-shu/">
+            <h2 class="post-title">
+              二叉树
+              <small>2020-03-07</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+      
+        <article class="post">
+          <a href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/">
+            <h2 class="post-title">
+              新建博客撒花
+              <small>2020-03-07</small>
+            </h2>
+          </a>
+        </article>
+      
+    
+  
+</div>
+
+
+        </div>
+
+        <div class="site-footer">
+  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
   <div class="social-container">
     
       
@@ -66,179 +291,6 @@
       
     
   </div>
-</div>
-
-    
-        
-
-<div class="archives-container">
-  
-    <h2 class="year">2020</h2>
-    
-      
-        <a href="https://david-h-devs.github.io/post/er-fen/" class="post">
-          <h2 class="post-title">
-            二分
-          </h2>
-          <div class="time">2020-03-24</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/" class="post">
-          <h2 class="post-title">
-            神经元网络的初步入门
-          </h2>
-          <div class="time">2020-03-24</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/you-yi-si-de-shu-xue-ti-mu/" class="post">
-          <h2 class="post-title">
-            有意思的数学题目
-          </h2>
-          <div class="time">2020-03-24</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/cong-tou-dao-wei-di-zou-yi-bian-tu-lun/" class="post">
-          <h2 class="post-title">
-            从头到尾地走一遍图论（持续更新中）
-          </h2>
-          <div class="time">2020-03-18</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/" class="post">
-          <h2 class="post-title">
-            无聊中写的
-          </h2>
-          <div class="time">2020-03-18</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/kan-nei-rong/" class="post">
-          <h2 class="post-title">
-            看内容
-          </h2>
-          <div class="time">2020-03-17</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/xue-xiao-bi-ji-da-ji-he-fu-ke/" class="post">
-          <h2 class="post-title">
-            学校笔记大集合（副科）
-          </h2>
-          <div class="time">2020-03-17</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/oi-geng-men/" class="post">
-          <h2 class="post-title">
-            OI梗们
-          </h2>
-          <div class="time">2020-03-16</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/" class="post">
-          <h2 class="post-title">
-            月赛讲评 #1
-          </h2>
-          <div class="time">2020-03-16</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/mu-biao-xiang-yao-zuo-de-he-xiang-yao-xue-de/" class="post">
-          <h2 class="post-title">
-            想要做的和想要学的
-          </h2>
-          <div class="time">2020-03-09</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/la-ge-lang-ri-cha-zhi-gong-shi/" class="post">
-          <h2 class="post-title">
-            拉格朗日插值公式
-          </h2>
-          <div class="time">2020-03-09</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/mc-pao-ku-zhu-yu/" class="post">
-          <h2 class="post-title">
-            MC跑酷术语
-          </h2>
-          <div class="time">2020-03-09</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/p2482-sdoi2010zhu-guo-sha-shi-zhao-kan-kan-ti/" class="post">
-          <h2 class="post-title">
-            P2482 [SDOI2010]猪国杀（试着做做）
-          </h2>
-          <div class="time">2020-03-08</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/ge-chong-mo-ban/" class="post">
-          <h2 class="post-title">
-            各种模板
-          </h2>
-          <div class="time">2020-03-08</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/mo-dui/" class="post">
-          <h2 class="post-title">
-            莫队
-          </h2>
-          <div class="time">2020-03-08</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/xian-duan-shu/" class="post">
-          <h2 class="post-title">
-            二叉树
-          </h2>
-          <div class="time">2020-03-07</div>
-        </a>
-      
-    
-      
-        <a href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/" class="post">
-          <h2 class="post-title">
-            新建博客撒花
-          </h2>
-          <div class="time">2020-03-07</div>
-        </a>
-      
-    
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-  
-</div>
-
-    
-        <div class="site-footer">
   <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
@@ -275,13 +327,27 @@ setInterval("createtime()",250);
 	</script>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-<!-- City版安装代码已完成 -->
-  <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+<!-- City版安装代码已完成 --> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
+
       </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
     </div>
   </body>
 </html>

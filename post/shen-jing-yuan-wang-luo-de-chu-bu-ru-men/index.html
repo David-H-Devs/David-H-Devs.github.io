@@ -1,106 +1,112 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>神经元网络的初步入门 | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585120705065">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="你好啊！欢迎来到我的小屋！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585220668249">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="神经元网络的初步入门 | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="本文是基于@3B1B的视频写的（理解）
-具体视频在av15532370，av16144388和av16577449。
-神经元网络Neuron Network\mathop{\text{神经元网络}}\limits_{\texttt{Neur..." />
-    <meta name="keywords" content="神经元网络,数学" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585120705065" alt="">
-  </a>
-  <h1 class="site-title">
-    谷俊的小屋
-  </h1>
-  <p class="site-description">
-    你好啊！欢迎来到我的小屋！
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" target="_blank">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://david-h-devs.github.io/">
+        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585220668249" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://david-h-devs.github.io/">
+        <h1 class="site-title">谷俊的小屋</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              神经元网络的初步入门
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-03-24
-              </span>
-              <span>
-                25 min read
-              </span>
-              
-                <a href="https://david-h-devs.github.io/tag/cjyC9LxBN/" class="post-tag">
-                  # 神经元网络
-                </a>
-              
-                <a href="https://david-h-devs.github.io/tag/MMX2wL-by/" class="post-tag">
-                  # 数学
-                </a>
-              
+          
+            <div class="feature-container" style="background-image: url('https://david-h-devs.github.io//post-images/shen-jing-yuan-wang-luo-de-chu-bu-ru-men.jpg')">
             </div>
+          
+          <h2 class="post-title">神经元网络的初步入门</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-24</span>
             
-              <img class="post-feature-image" src="https://david-h-devs.github.io//post-images/shen-jing-yuan-wang-luo-de-chu-bu-ru-men.jpg" alt="">
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://david-h-devs.github.io/tag/cjyC9LxBN/">
+                    神经元网络
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://david-h-devs.github.io/tag/MMX2wL-by/">
+                    数学
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>本文是基于@3B1B的视频写的（理解）</p>
+          </div>
+          <div class="post-content">
+            <p>本文是基于@3B1B的视频写的（理解）</p>
 <p>具体视频在av15532370，av16144388和av16577449。</p>
 <h1 id="mathoptext神经元网络limits_textttneuron-network"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo><mtext>神经元网络</mtext></mo><mrow><mtext mathvariant="monospace">Neuron</mtext><mtext> </mtext><mtext mathvariant="monospace">Network</mtext></mrow></msub></mrow><annotation encoding="application/x-tex">\mathop{\text{神经元网络}}\limits_{\texttt{Neuron Network}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.38333em;vertical-align:-0.7em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord texttt mtight">Neuron Network</span></span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord text"><span class="mord cjk_fallback">神经元网络</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7em;"><span></span></span></span></span></span></span></span></span></h1>
 <h2 id="全篇需要微积分与线性代数基础">全篇需要微积分与线性代数基础！！！</h2>
@@ -354,39 +360,37 @@ s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z'/></svg></span></span></sp
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
 <!-- City版安装代码已完成 -->
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#mathoptext%E7%A5%9E%E7%BB%8F%E5%85%83%E7%BD%91%E7%BB%9Climits_textttneuron-network"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo><mtext>神经元网络</mtext></mo><mrow><mtext mathvariant="monospace">Neuron</mtext><mtext> </mtext><mtext mathvariant="monospace">Network</mtext></mrow></msub></mrow><annotation encoding="application/x-tex">\mathop{\text{神经元网络}}\limits_{\texttt{Neuron Network}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.38333em;vertical-align:-0.7em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord texttt mtight">Neuron Network</span></span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord text"><span class="mord cjk_fallback">神经元网络</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7em;"><span></span></span></span></span></span></span></span></span></a>
-<ul>
-<li><a href="#%E5%85%A8%E7%AF%87%E9%9C%80%E8%A6%81%E5%BE%AE%E7%A7%AF%E5%88%86%E4%B8%8E%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9F%BA%E7%A1%80">全篇需要微积分与线性代数基础！！！</a></li>
-<li><a href="#pt-1-mathoptext%E7%BB%93%E6%9E%84limits_textttstructure">Pt. 1 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo><mtext>结构</mtext></mo><mtext mathvariant="monospace">Structure</mtext></msub></mrow><annotation encoding="application/x-tex">\mathop{\text{结构}}\limits_{\texttt{Structure}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.38333em;vertical-align:-0.7em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord texttt mtight">Structure</span></span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord text"><span class="mord cjk_fallback">结构</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7em;"><span></span></span></span></span></span></span></span></span></a></li>
-<li><a href="#pt-2-mathoptext%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95limits_textttgradient-descent">Pt. 2 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo><mtext>梯度下降法</mtext></mo><mrow><mtext mathvariant="monospace">Gradient</mtext><mtext> </mtext><mtext mathvariant="monospace">Descent</mtext></mrow></msub></mrow><annotation encoding="application/x-tex">\mathop{\text{梯度下降法}}\limits_{\texttt{Gradient Descent}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.38333em;vertical-align:-0.7em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord texttt mtight">Gradient Descent</span></span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord text"><span class="mord cjk_fallback">梯度下降法</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7em;"><span></span></span></span></span></span></span></span></span></a></li>
-<li><a href="#pt-25-%E6%9B%B4%E5%85%B7%E4%BD%93%E7%9A%84%E8%AE%B2%E4%B8%80%E8%AE%B2%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0">Pt. 2.5 更具体的讲一讲代价函数</a></li>
-<li><a href="#mathoptext%E5%9B%9E%E9%A1%BElimits_textttrecap"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mo><mtext>回顾</mtext></mo><mtext mathvariant="monospace">Recap</mtext></msub></mrow><annotation encoding="application/x-tex">\mathop{\text{回顾}}\limits_{\texttt{Recap}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.538884em;vertical-align:-0.8555539999999999em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.68333em;"><span style="top:-2.4em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord texttt mtight">Recap</span></span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord text"><span class="mord cjk_fallback">回顾</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8555539999999999em;"><span></span></span></span></span></span></span></span></span></a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://david-h-devs.github.io/post/you-yi-si-de-shu-xue-ti-mu/">
+            <a class="purple-link" href="https://david-h-devs.github.io/post/you-yi-si-de-shu-xue-ti-mu/">
               <h3 class="post-title">
-                有意思的数学题目
+                下一篇：有意思的数学题目
               </h3>
             </a>
           </div>
-        
+          
+      </div>
 
-        
+      
 
-        <div class="site-footer">
+      <div class="site-footer">
+  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
@@ -423,54 +427,26 @@ setInterval("createtime()",250);
 	</script>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-<!-- City版安装代码已完成 -->
-  <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+<!-- City版安装代码已完成 --> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>

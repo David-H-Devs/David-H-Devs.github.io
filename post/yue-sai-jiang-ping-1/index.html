@@ -1,107 +1,109 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>月赛讲评 #1 | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585120705065">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="你好啊！欢迎来到我的小屋！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585220668249">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="月赛讲评 #1 | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="从这个月开始，每个月都会有1-2次月赛（在蒟蒻欢乐小窝里面的团队赛）
-本博客将会置顶7天后撤销置顶。
-我们来讲一下【GJR-001】2020 年 DH 3 月蒟蒻欢乐水题赛吧！
-题目A
-题目背景
-小明学会了好多数据结构，他想要加强求逆序对的..." />
-    <meta name="keywords" content="月赛讲评,C++" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585120705065" alt="">
-  </a>
-  <h1 class="site-title">
-    谷俊的小屋
-  </h1>
-  <p class="site-description">
-    你好啊！欢迎来到我的小屋！
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" target="_blank">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://david-h-devs.github.io/">
+        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585220668249" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://david-h-devs.github.io/">
+        <h1 class="site-title">谷俊的小屋</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              月赛讲评 #1
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-03-16
-              </span>
-              <span>
-                9 min read
-              </span>
-              
-                <a href="https://david-h-devs.github.io/tag/2aAMibQoR/" class="post-tag">
-                  # 月赛讲评
-                </a>
-              
-                <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="post-tag">
-                  # C++
-                </a>
-              
-            </div>
+          
+          <h2 class="post-title">月赛讲评 #1</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-16</span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>从这个月开始，每个月都会有1-2次月赛（在蒟蒻欢乐小窝里面的团队赛）<br>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://david-h-devs.github.io/tag/2aAMibQoR/">
+                    月赛讲评
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://david-h-devs.github.io/tag/VmMJu296X/">
+                    C++
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>从这个月开始，每个月都会有1-2次月赛（在蒟蒻欢乐小窝里面的团队赛）<br>
 本博客将会置顶7天后撤销置顶。<br>
 我们来讲一下<a href="https://www.luogu.com.cn/contest/27563">【GJR-001】2020 年 DH 3 月蒟蒻欢乐水题赛</a>吧！</p>
 <h1 id="题目a">题目A</h1>
@@ -290,74 +292,37 @@ AC代码：<br>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
 <!-- City版安装代码已完成 -->
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E9%A2%98%E7%9B%AEa">题目A</a>
-<ul>
-<li><a href="#%E9%A2%98%E7%9B%AE%E8%83%8C%E6%99%AF">题目背景</a></li>
-<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">题目描述</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F">输入格式</a></li>
-<li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F">输出格式</a></li>
-<li><a href="#%E6%A0%B7%E4%BE%8B">样例</a>
-<ul>
-<li><a href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%85%A51">样例输入#1</a></li>
-<li><a href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%87%BA2">样例输出#2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#%E9%A2%98%E7%9B%AEb">题目B</a>
-<ul>
-<li><a href="#%E9%A2%98%E7%9B%AE%E8%83%8C%E6%99%AF-2">题目背景</a></li>
-<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2">题目描述</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-2">输入格式</a></li>
-<li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-2">输出格式</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B">输入输出样例</a>
-<ul>
-<li><a href="#%E8%BE%93%E5%85%A51">输入#1</a></li>
-<li><a href="#%E8%BE%93%E5%85%A52">输入#2</a></li>
-</ul>
-</li>
-<li><a href="#%E6%8F%90%E7%A4%BA%E4%B8%8E%E8%AF%B4%E6%98%8E">提示与说明</a></li>
-</ul>
-</li>
-<li><a href="#%E9%A2%98%E7%9B%AEc">题目C</a>
-<ul>
-<li><a href="#%E9%A2%98%E7%9B%AE%E8%83%8C%E6%99%AF-3">题目背景</a></li>
-<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-3">题目描述</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F-3">输入格式</a></li>
-<li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F-3">输出格式</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B-2">输入输出样例</a>
-<ul>
-<li><a href="#%E8%BE%93%E5%85%A51-2">输入#1</a></li>
-<li><a href="#%E8%BE%93%E5%85%A52-2">输入#2</a></li>
-</ul>
-</li>
-<li><a href="#%E6%8F%90%E7%A4%BA%E4%B8%8E%E8%AF%B4%E6%98%8E-2">提示与说明</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://david-h-devs.github.io/post/mu-biao-xiang-yao-zuo-de-he-xiang-yao-xue-de/">
+            <a class="purple-link" href="https://david-h-devs.github.io/post/mu-biao-xiang-yao-zuo-de-he-xiang-yao-xue-de/">
               <h3 class="post-title">
-                想要做的和想要学的
+                下一篇：想要做的和想要学的
               </h3>
             </a>
           </div>
-        
+          
+      </div>
 
-        
+      
 
-        <div class="site-footer">
+      <div class="site-footer">
+  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
@@ -394,54 +359,26 @@ setInterval("createtime()",250);
 	</script>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-<!-- City版安装代码已完成 -->
-  <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+<!-- City版安装代码已完成 --> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>

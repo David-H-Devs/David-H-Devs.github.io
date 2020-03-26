@@ -1,123 +1,112 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>从头到尾地走一遍图论（持续更新中） | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585120705065">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="你好啊！欢迎来到我的小屋！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585220668249">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="从头到尾地走一遍图论（持续更新中） | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="本文将会按照这样的顺序来写：
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
-建图
-树（各种树
-树上DFS、树上BFS等
-分层图
-主席树
-最短路
-Tarjan
-Dinic
-匈牙利
-最小生成树
-割点
-强连通分量
-流网络
-拓扑排序
-Dijkstra
-Bellman-Ford
-SPFA
-二分..." />
-    <meta name="keywords" content="图论,C++" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585120705065" alt="">
-  </a>
-  <h1 class="site-title">
-    谷俊的小屋
-  </h1>
-  <p class="site-description">
-    你好啊！欢迎来到我的小屋！
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" target="_blank">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://david-h-devs.github.io/">
+        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585220668249" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://david-h-devs.github.io/">
+        <h1 class="site-title">谷俊的小屋</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              从头到尾地走一遍图论（持续更新中）
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-03-18
-              </span>
-              <span>
-                10 min read
-              </span>
-              
-                <a href="https://david-h-devs.github.io/tag/4EksnvqBC/" class="post-tag">
-                  # 图论
-                </a>
-              
-                <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="post-tag">
-                  # C++
-                </a>
-              
+          
+            <div class="feature-container" style="background-image: url('https://david-h-devs.github.io//post-images/cong-tou-dao-wei-di-zou-yi-bian-tu-lun.jpg')">
             </div>
+          
+          <h2 class="post-title">从头到尾地走一遍图论（持续更新中）</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-18</span>
             
-              <img class="post-feature-image" src="https://david-h-devs.github.io//post-images/cong-tou-dao-wei-di-zou-yi-bian-tu-lun.jpg" alt="">
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://david-h-devs.github.io/tag/4EksnvqBC/">
+                    图论
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://david-h-devs.github.io/tag/VmMJu296X/">
+                    C++
+                    
+                  </a>
+                
+              </span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>本文将会按照这样的顺序来写：</p>
+          </div>
+          <div class="post-content">
+            <p>本文将会按照这样的顺序来写：</p>
 <ol>
 <li>建图</li>
 <li>树（各种树</li>
@@ -412,70 +401,37 @@ int main()
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
 <!-- City版安装代码已完成 -->
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#1-%E5%BB%BA%E5%9B%BE%E5%9B%BE%E7%9A%84%E5%AD%98%E5%82%A8">1. 建图（图的存储）</a>
-<ul>
-<li><a href="#%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89">图的定义</a></li>
-<li><a href="#%E4%B8%80%E4%BA%9B%E6%A6%82%E5%BF%B5">一些概念</a>
-<ul>
-<li><a href="#%E7%9B%B8%E9%82%BB">相邻</a></li>
-<li><a href="#%E5%BA%A6%E6%95%B0">度数</a></li>
-<li><a href="#%E8%87%AA%E7%8E%AF">自环</a></li>
-</ul>
-</li>
-<li><a href="#%E5%9B%BE%E7%9A%84%E5%AD%98%E5%82%A8">图的存储</a>
-<ul>
-<li><a href="#%E6%B3%95%E4%B8%80%E7%9B%B4%E6%8E%A5%E5%AD%98%E5%82%A8">法一：直接存储</a>
-<ul>
-<li><a href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6">时空复杂度</a></li>
-<li><a href="#%E5%BA%94%E7%94%A8">应用</a></li>
-</ul>
-</li>
-<li><a href="#%E6%B3%95%E4%BA%8C%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5">法二：邻接矩阵</a>
-<ul>
-<li><a href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6-2">时空复杂度</a></li>
-<li><a href="#%E5%BA%94%E7%94%A8-2">应用</a></li>
-</ul>
-</li>
-<li><a href="#%E6%B3%95%E4%B8%89%E9%82%BB%E6%8E%A5%E8%A1%A8">法三：邻接表</a>
-<ul>
-<li><a href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6-3">时空复杂度</a></li>
-<li><a href="#%E5%BA%94%E7%94%A8-3">应用</a></li>
-</ul>
-</li>
-<li><a href="#%E6%B3%95%E5%9B%9B%E9%93%BE%E5%BC%8F%E5%89%8D%E5%90%91%E6%98%9F">法四：链式前向星</a>
-<ul>
-<li><a href="#%E6%97%B6%E7%A9%BA%E5%A4%8D%E6%9D%82%E5%BA%A6-4">时空复杂度</a></li>
-<li><a href="#%E5%BA%94%E7%94%A8-4">应用</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/">
+            <a class="purple-link" href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/">
               <h3 class="post-title">
-                无聊中写的
+                下一篇：无聊中写的
               </h3>
             </a>
           </div>
-        
+          
+      </div>
 
-        
+      
 
-        <div class="site-footer">
+      <div class="site-footer">
+  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
@@ -512,54 +468,26 @@ setInterval("createtime()",250);
 	</script>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-<!-- City版安装代码已完成 -->
-  <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+<!-- City版安装代码已完成 --> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>

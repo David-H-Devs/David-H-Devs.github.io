@@ -1,103 +1,102 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>P2482 [SDOI2010]猪国杀（试着做做） | 谷俊的小屋</title>
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585120705065">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="你好啊！欢迎来到我的小屋！">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585220668249">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="P2482 [SDOI2010]猪国杀（试着做做） | 谷俊的小屋 - Atom Feed" href="https://david-h-devs.github.io//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="我们先抄一下题（惯例）。
-题目描述
-游戏背景
-《猪国杀》是一种多猪牌类回合制游戏，一共有 333 种角色：主猪，忠猪，反猪。每局游戏主猪有且只有 111 只，忠猪和反猪可以有多只，每只猪扮演 111 种角色。
-游戏目的
-主猪 / MP\te..." />
-    <meta name="keywords" content="C++" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://david-h-devs.github.io/">
-  <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585120705065" alt="">
-  </a>
-  <h1 class="site-title">
-    谷俊的小屋
-  </h1>
-  <p class="site-description">
-    你好啊！欢迎来到我的小屋！
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu" target="_blank">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://david-h-devs.github.io/">
+        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585220668249" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://david-h-devs.github.io/">
+        <h1 class="site-title">谷俊的小屋</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              P2482 [SDOI2010]猪国杀（试着做做）
-            </h2>
-            <div class="post-info">
-              <span>
-                2020-03-08
-              </span>
-              <span>
-                10 min read
-              </span>
-              
-                <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="post-tag">
-                  # C++
-                </a>
-              
-            </div>
+          
+          <h2 class="post-title">P2482 [SDOI2010]猪国杀（试着做做）</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-03-08</span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>我们先抄一下题（惯例）。</p>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://david-h-devs.github.io/tag/VmMJu296X/">
+                    C++
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>我们先抄一下题（惯例）。</p>
 <h1 id="题目描述">题目描述</h1>
 <h2 id="游戏背景">游戏背景</h2>
 <p>《猪国杀》是一种多猪牌类回合制游戏，一共有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 种角色：主猪，忠猪，反猪。每局游戏主猪有且只有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 只，忠猪和反猪可以有多只，每只猪扮演 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 种角色。</p>
@@ -214,67 +213,37 @@ J J J J J J D
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
 <!-- City版安装代码已完成 -->
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0">题目描述</a>
-<ul>
-<li><a href="#%E6%B8%B8%E6%88%8F%E8%83%8C%E6%99%AF">游戏背景</a></li>
-<li><a href="#%E6%B8%B8%E6%88%8F%E7%9B%AE%E7%9A%84">游戏目的</a></li>
-<li><a href="#%E6%B8%B8%E6%88%8F%E8%BF%87%E7%A8%8B">游戏过程</a></li>
-<li><a href="#%E5%9F%BA%E6%9C%AC%E7%89%8C">基本牌</a></li>
-<li><a href="#%E9%94%A6%E5%9B%8A%E7%89%8C">锦囊牌</a></li>
-<li><a href="#%E8%A3%85%E5%A4%87%E7%89%8C">装备牌</a></li>
-<li><a href="#%E7%89%B9%E6%AE%8A%E4%BA%8B%E4%BB%B6%E5%8F%8A%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A">特殊事件及概念解释</a></li>
-<li><a href="#%E5%87%A0%E7%A7%8D%E8%A1%8C%E4%B8%BA">几种行为</a></li>
-<li><a href="#%E8%A1%8C%E5%8A%A8%E5%87%86%E5%88%99">行动准则</a>
-<ul>
-<li><a href="#%E5%85%B1%E6%80%A7">共性</a></li>
-<li><a href="#%E7%89%B9%E6%80%A7bug">特性（<s>bug</s>）</a></li>
-</ul>
-</li>
-<li><a href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F">输入格式</a></li>
-<li><a href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F">输出格式</a></li>
-<li><a href="#%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E6%A0%B7%E4%BE%8B">输入输出样例</a>
-<ul>
-<li><a href="#%E8%BE%93%E5%85%A51">输入#1</a></li>
-<li><a href="#%E8%BE%93%E5%87%BA1">输出#1</a></li>
-</ul>
-</li>
-<li><a href="#%E8%AF%B4%E6%98%8E%E6%8F%90%E7%A4%BA">说明/提示</a>
-<ul>
-<li><a href="#%E6%A0%B7%E4%BE%8B%E8%A7%A3%E9%87%8A">样例解释</a>
-<ul>
-<li><a href="#%E7%AC%AC%E4%B8%80%E5%9B%9E%E5%90%88">第一回合：</a></li>
-<li><a href="#%E4%B8%8B%E4%B8%80%E5%9B%9E%E5%90%88">下一回合：</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#%E8%87%AA%E5%B7%B1%E8%AF%95%E7%9D%80%E6%83%B3%E6%83%B3">自己试着想想</a></li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
           <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://david-h-devs.github.io/post/ge-chong-mo-ban/">
+            <a class="purple-link" href="https://david-h-devs.github.io/post/ge-chong-mo-ban/">
               <h3 class="post-title">
-                各种模板
+                下一篇：各种模板
               </h3>
             </a>
           </div>
-        
+          
+      </div>
 
-        
+      
 
-        <div class="site-footer">
+      <div class="site-footer">
+  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
   <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
@@ -311,54 +280,26 @@ setInterval("createtime()",250);
 	</script>
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
-<!-- City版安装代码已完成 -->
-  <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+<!-- City版安装代码已完成 --> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>
