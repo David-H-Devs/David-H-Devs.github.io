@@ -1,109 +1,102 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>二叉树 | 谷俊的小屋</title>
 <meta name="description" content="你好啊！欢迎来到我的小屋！">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585358936319">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585290773325">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://david-h-devs.github.io/">
-        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585290773325" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://david-h-devs.github.io/">
-        <h1 class="site-title">谷俊的小屋</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://david-h-devs.github.io/">谷俊的小屋</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu" target="_blank">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
-        
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-        <div class="post-detail">
-          
-          <h2 class="post-title">二叉树</h2>
-          <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2020-03-07</span>
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>二叉树</h1>
+            <p class="article-meta">
+              2020-03-07
+              
+                <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="badge secondary">
+                  C++
+                </a>
+              
+                <a href="https://david-h-devs.github.io/tag/7d8ZtXad0d/" class="badge ">
+                  数据结构
+                </a>
+              
+            </p>
             
-              <span>
-                <i class="icon-pricetags-outline"></i>
-                
-                  <a href="https://david-h-devs.github.io/tag/VmMJu296X/">
-                    C++
-                    
-                      ，
-                    
-                  </a>
-                
-                  <a href="https://david-h-devs.github.io/tag/7d8ZtXad0d/">
-                    数据结构
-                    
-                  </a>
-                
-              </span>
-            
-          </div>
-          <div class="post-content">
-            <p>（由于Gitalk暂时配置很麻烦，所以我等他配置好之后我在用吧！）</p>
+            <div class="post-content">
+              <p>（由于Gitalk暂时配置很麻烦，所以我等他配置好之后我在用吧！）</p>
 <p>在计算机科学中，二叉树是每个结点最多有两个子树的树结构。通常子树被称作“左子树”（left subtree）和“右子树”（right subtree）。二叉树常被用于实现二叉查找树和二叉堆。<br>
 一棵深度为k，且有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.932438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>个结点的二叉树，称为满二叉树。这种树的特点是每一层上的结点数都是最大结点数。而在一棵二叉树中，除最后一层外，若其余层都是满的，并且或者最后一层是满的，或者是在右边缺少连续若干结点，则此二叉树为完全二叉树。具有n个结点的完全二叉树的深度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mrow><mi mathvariant="normal">f</mi><mi mathvariant="normal">l</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">r</mi></mrow><mo>(</mo><mi>log</mi><mo>⁡</mo><mn>2</mn><mi>n</mi><mo>)</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathrm{floor}(\log 2n)+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathrm" style="margin-right:0.07778em;">f</span><span class="mord mathrm">l</span><span class="mord mathrm">o</span><span class="mord mathrm">o</span><span class="mord mathrm">r</span></span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>。深度为k的完全二叉树，至少有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">2^{k-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8491079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>个叶子结点，至多有<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mn>2</mn><mi>k</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2^k-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.932438em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.849108em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span>个结点。</p>
 <p>二叉树是递归定义的，其结点有左右子树之分，逻辑上二叉树有五种基本形态：</p>
@@ -199,38 +192,172 @@ int main()
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript></p>
 </div>
 <!-- City版安装代码已完成 -->
-          </div>
+            </div>
+          </article>
         </div>
-
-        
-          <div class="next-post">
-            <a class="purple-link" href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/">
-              <h3 class="post-title">
-                下一篇：新建博客撒花
-              </h3>
-            </a>
-          </div>
+        <div class="paper" data-aos="fade-in">
           
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://david-h-devs.github.io/post/xin-jian-bo-ke-sa-hua/">
+                <h3 class="post-title">
+                  新建博客撒花
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
       </div>
 
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://david-h-devs.github.io//images/avatar.png?v=1585358936319" class="no-responsive avatar">
+    <div class="text-muted">你好啊！欢迎来到我的小屋！</div>
+    <div class="social-container">
       
-
-      <div class="site-footer">
-  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
-  <div class="social-container">
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+    </div>
   </div>
-  <span id="timeDate">载入天数...载入时分秒...</span>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/er-fen/">二分</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/">神经元网络的初步入门</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/you-yi-si-de-shu-xue-ti-mu/">有意思的数学题目</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/cong-tou-dao-wei-di-zou-yi-bian-tu-lun/">从头到尾地走一遍图论（持续更新中）</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/">无聊中写的</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/kan-nei-rong/">看内容</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/xue-xiao-bi-ji-da-ji-he-fu-ke/">学校笔记大集合（副科）</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/oi-geng-men/">OI梗们</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/">月赛讲评 #1</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://david-h-devs.github.io/tag/cjyC9LxBN/" class="badge secondary">
+          神经元网络
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/MMX2wL-by/" class="badge warning">
+          数学
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/4EksnvqBC/" class="badge secondary">
+          图论
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="badge secondary">
+          C++
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/WDtZ90Lux/" class="badge ">
+          学校笔记
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/2aAMibQoR/" class="badge success">
+          月赛讲评
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/Bi7NbF5TP/" class="badge warning">
+          算法
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/7d8ZtXad0d/" class="badge secondary">
+          数据结构
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
     function createtime() { 
@@ -247,20 +374,19 @@ int main()
 setInterval("createtime()",250);
 </script>
 <script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
 
 
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 

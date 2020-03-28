@@ -1,154 +1,268 @@
-
 <!DOCTYPE html>
 <html>
   <head>
-    
-<meta charset="utf-8" >
+    <meta charset="utf-8" >
 
 <title>神经元网络 | 谷俊的小屋</title>
 <meta name="description" content="你好啊！欢迎来到我的小屋！">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585358936319">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://david-h-devs.github.io//favicon.ico?v=1585290773325">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://david-h-devs.github.io//styles/main.css">
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div id="app" class="main">
-      <div class="site-header-container">
-  <div class="site-header">
-    <div class="left">
-      <a href="https://david-h-devs.github.io/">
-        <img class="avatar" src="https://david-h-devs.github.io//images/avatar.png?v=1585290773325" alt="" width="32px" height="32px">
-      </a>
-      <a href="https://david-h-devs.github.io/">
-        <h1 class="site-title">谷俊的小屋</h1>
-      </a>
-    </div>
-    <div class="right">
-      <transition name="fade">
-        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
-      </transition>
-    </div>
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://david-h-devs.github.io/">谷俊的小屋</a></h3>
   </div>
-</div>
-
-<transition name="fade">
-  <div class="menu-container" style="display: none;" v-show="menuVisible">
-    <div class="menu-list">
-      
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
         
-          <a href="/" class="menu purple-link">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="menu purple-link">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="menu purple-link">
-            标签
-          </a>
-        
-      
-        
-          <a class="menu purple-link" href="/post/about" class="menu" target="_blank">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-</transition>
-
-
-      <div class="content-container">
-
-        <div class="current-tag-container">
-          <h2 class="title">
-            <i class="icon icon-pricetags-outline"></i> 神经元网络
-          </h2> 
-        </div>
-
-        
-<section class="post-item">
-    <div class="content">
-      <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/">
-        <h2 class="post-title">神经元网络的初步入门</h2>
-      </a>
-      <div class="post-abstract">
-        
-      </div>
-      <div class="post-info">
-        <span><i class="icon icon-calendar-outline"></i> 2020-03-24</span>
-        
-          <span>
-            <i class="icon icon-pricetags-outline"></i>
+          <li>
             
-              <a href="https://david-h-devs.github.io/tag/cjyC9LxBN/">
-                神经元网络
-                
-                  ，
-                
+              <a href="/" class="menu">
+                首页
               </a>
             
-              <a href="https://david-h-devs.github.io/tag/MMX2wL-by/">
-                数学
-                
+          </li>
+        
+          <li>
+            
+              <a href="/archives" class="menu">
+                归档
               </a>
             
-          </span>
+          </li>
         
-      </div>
+          <li>
+            
+              <a href="/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/post/about" class="menu" target="_blank">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
     </div>
-    
-      <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/">
-        <div class="feature-container" style="background-image: url('https://david-h-devs.github.io//post-images/shen-jing-yuan-wang-luo-de-chu-bu-ru-men.jpg')">
-        </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <h2 class="current-tag">标签: 神经元网络</h2>
+          
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/">神经元网络的初步入门</a>
+    </h2>
+    <p class="article-meta">
+      2020-03-24
+      
+        <a href="https://david-h-devs.github.io/tag/cjyC9LxBN/" class="badge warning">
+          神经元网络
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/MMX2wL-by/" class="badge success">
+          数学
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      
+    </p>
+    <div class="row">
+      <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/" class="readmore-link">
+        <button>
+          Read More
+        </button>
       </a>
-    
-  </section>
+    </div>
+  </article>
 
 
-<div class="pagination-container">
+        </div>
+        <div class="row flex-edges">
   
   
 </div>
 
-
       </div>
-
-      <div class="site-footer">
-  <div class="slogan">你好啊！欢迎来到我的小屋！</div>
-  <div class="social-container">
-    
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://david-h-devs.github.io//images/avatar.png?v=1585358936319" class="no-responsive avatar">
+    <div class="text-muted">你好啊！欢迎来到我的小屋！</div>
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
   </div>
-  <span id="timeDate">载入天数...载入时分秒...</span>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/er-fen/">二分</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/shen-jing-yuan-wang-luo-de-chu-bu-ru-men/">神经元网络的初步入门</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/you-yi-si-de-shu-xue-ti-mu/">有意思的数学题目</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/cong-tou-dao-wei-di-zou-yi-bian-tu-lun/">从头到尾地走一遍图论（持续更新中）</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/wu-liao-zhong-xie-de/">无聊中写的</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/kan-nei-rong/">看内容</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/xue-xiao-bi-ji-da-ji-he-fu-ke/">学校笔记大集合（副科）</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/oi-geng-men/">OI梗们</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://david-h-devs.github.io/post/yue-sai-jiang-ping-1/">月赛讲评 #1</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://david-h-devs.github.io/tag/cjyC9LxBN/" class="badge secondary">
+          神经元网络
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/MMX2wL-by/" class="badge ">
+          数学
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/4EksnvqBC/" class="badge success">
+          图论
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/VmMJu296X/" class="badge secondary">
+          C++
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/WDtZ90Lux/" class="badge success">
+          学校笔记
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/2aAMibQoR/" class="badge secondary">
+          月赛讲评
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/Bi7NbF5TP/" class="badge ">
+          算法
+        </a>
+      
+        <a href="https://david-h-devs.github.io/tag/7d8ZtXad0d/" class="badge ">
+          数据结构
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    <span id="timeDate">载入天数...载入时分秒...</span>
 <script>
     var now = new Date(); 
     function createtime() { 
@@ -165,20 +279,18 @@
 setInterval("createtime()",250);
 </script>
 <script type="text/javascript" color="220,220,220" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script> | <a class="rss" href="https://david-h-devs.github.io//atom.xml" target="_blank">RSS</a>
+  </div>
 </div>
 
-
     </div>
-    <script type="application/javascript">
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
 
 hljs.initHighlightingOnLoad()
-
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
 
 </script>
 
